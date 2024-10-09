@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,4 +9,10 @@
 html {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
+}
+.container {
+  @apply w-full bg-white;
+}
+.wrapper {
+  @apply w-full max-w-[1170px] mx-auto;
 }
