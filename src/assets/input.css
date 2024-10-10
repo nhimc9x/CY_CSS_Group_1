@@ -8,7 +8,7 @@
 }
 html {
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  @apply xs:text-[16px] text-[15px];
 }
 .container {
   @apply w-full bg-white;
@@ -21,4 +21,20 @@ html {
 }
 .link {
   @apply hover:text-ct-primary;
+}
+
+::-webkit-scrollbar {
+  @apply h-3 w-5;
+}
+::-webkit-scrollbar-track {
+  @apply rounded-xl mx-[18vw] bg-white;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-xl bg-gray-50;
+}
+.flag-sale {
+  clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+}
+.ct-product-menu-active {
+  @apply font-bold text-ct-secondary relative after:absolute after:w-9 after:h-[3px] after:bottom-0 after:bg-ct-secondary after:left-1/2 after:-translate-x-1/2;
 }
