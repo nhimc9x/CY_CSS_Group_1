@@ -12,7 +12,10 @@ module.exports = {
         'ct-sub-text-color': '#4F4F4F99',
       },
       fontFamily: {
-        nunito: ['Nunito', 'sans-serif'],
+        'dancing': ['"Dancing Script"', 'cursive'],
+      },
+      boxShadow: {
+        'custom': '0px 0px 34px 0px #0000001A',
       },
     },
   },
