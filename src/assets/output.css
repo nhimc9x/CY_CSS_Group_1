@@ -629,6 +629,14 @@ video {
   margin-right: 0.75rem;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.top-0{
+  top: 0px;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -836,10 +844,10 @@ video {
   width: 100%;
 }
 
+
 .w-\[252px\]{
   width: 252px;
 }
-
 .max-w-\[1920px\]{
   max-width: 1920px;
 }
@@ -1114,6 +1122,7 @@ video {
 
 .text-\[9px\]{
   font-size: 9px;
+
 }
 
 .text-sm{
@@ -1174,6 +1183,7 @@ video {
 .text-ct-primary{
   --tw-text-opacity: 1;
   color: rgb(53 108 7 / var(--tw-text-opacity));
+
 }
 
 .text-ct-text-color{
