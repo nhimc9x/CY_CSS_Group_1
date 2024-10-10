@@ -637,11 +637,156 @@ video {
   top: 0px;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.m-20{
+  margin: 5rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.mt-\[124px\]{
+  margin-top: 124px;
+}
+
+.mb-\[22px\]{
+  margin-bottom: 22px;
+}
+
+.mb-\[81px\]{
+  margin-bottom: 81px;
+}
+
+.mb-\[204px\]{
+  margin-bottom: 204px;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-\[335px\]{
+  height: 335px;
+}
+
+.h-\[51px\]{
+  height: 51px;
+}
+
+.h-\[393px\]{
+  height: 393px;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-\[269px\]{
+  width: 269px;
+}
+
+.w-\[533px\]{
+  width: 533px;
+}
+
+.max-w-\[1920\]{
+  max-width: 1920;
+}
+
+.max-w-\[1920px\]{
+  max-width: 1920px;
+}
+
+.max-w-\[533px\]{
+  max-width: 533px;
+}
+
+.max-w-\[550px\]{
+  max-width: 550px;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.place-content-center{
+  place-content: center;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.gap-x-2\.5{
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+
+.bg-ct-cta-color{
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/header\/background-404\.png\'\)\]{
+  background-image: url('../assets/images/header/background-404.png');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.pb-\[204px\]{
+  padding-bottom: 204px;
+}
+
+.pt-\[81px\]{
+  padding-top: 81px;
+}
+
+.font-sans{
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -1122,7 +1267,6 @@ video {
 
 .text-\[9px\]{
   font-size: 9px;
-
 }
 
 .text-sm{
@@ -1130,9 +1274,8 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-\[28px\]{
+  font-size: 28px;
 }
 
 .text-lg{
@@ -1143,7 +1286,9 @@ video {
 .font-bold{
   font-weight: 700;
 }
-
+.text-\[\#C4C4C4\]{
+  --tw-text-opacity: 1;
+  color: rgb(196 196 196 / var(--tw-text-opacity));
 .font-semibold{
   font-weight: 600;
 }
@@ -1183,7 +1328,6 @@ video {
 .text-ct-primary{
   --tw-text-opacity: 1;
   color: rgb(53 108 7 / var(--tw-text-opacity));
-
 }
 
 .text-ct-text-color{
@@ -1224,6 +1368,7 @@ video {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 * {
@@ -1453,4 +1598,5 @@ html {
   .xs\:border-0{
     border-width: 0px;
   }
+
 }
