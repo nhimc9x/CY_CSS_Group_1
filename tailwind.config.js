@@ -11,6 +11,9 @@ module.exports = {
         'ct-text-color': '#4F4F4F',
         'ct-sub-text-color': '#4F4F4F99',
       },
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
+      },
     },
   },
   plugins: [],
