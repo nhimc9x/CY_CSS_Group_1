@@ -1,16 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang chủ</title>
   <link rel="stylesheet" href="src/assets/output.css">
+  <script defer src="src/assets/js/main.js"></script>
 </head>
+
 <body>
-  <div class="container">
-    <header></header>
-    <div class="wrapper"></div>
-    <footer></footer>
+  <div class="w-full">
+    <header class="h-[50px] xs:h-20 bg-white shadow-[0px_4px_13px_0px_rgba(0,0,0,0.1)] fixed top-0 left-0 right-0 z-10">
+      <div class="wrapper h-full flex items-center justify-between">
+        <a href="" class="w-[138px] h-[28px] xs:w-[229px] xs:h-[44px] block flex-shrink-0 order-1 xs:order-none">
+          <img class="size-full" src="src/assets/images/nongthao.png" alt="">
+        </a>
+        <ul class="hidden xs:flex font-semibold uppercase mx-3 gap-9 text-ct-heading-color flex-shrink-0 *:py-1">
+          <li class="relative group">
+            <a class="link" href="">Sản phẩm</a>
+            <div
+              class="w-[198px] hidden group-hover:block bg-white border-[0.1px] border-gray-50 shadow px-3 absolute z-20 top-full left-1/2 -translate-x-1/2 text-sm uppercase font-semibold text-ct-heading-color *:block *:py-3 divide-y-[0.5px] divide-[#0000004D]">
+              <a class="link" href="">thảo dược</a>
+              <a class="link" href="">nông sản</a>
+              <a class="link" href="">hoa quả hữu cơ</a>
+            </div>
+          </li>
+          <li>
+            <a class="link text-ct-primary" href="">Về nông sản</a>
+          </li>
+          <li>
+            <a class="link" href="">Blog</a>
+          </li>
+          <li>
+            <a class="link" href="">Liên hệ</a>
+          </li>
+        </ul>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu-btn" class="size-6 block xs:hidden">
+          <img class="img-cover" src="src/assets/icons/mobile-menu.svg" alt="">
+        </div>
+        <div id="mobile-menu"
+          class="fixed z-30 bg-slate-200 w-[288px] top-0 -left-full bottom-0 px-4 py-7 duration-300 ease-in-out">
+          <div class="flex items-center justify-between">
+            <a href="" class="w-[138px] h-[28px] block flex-shrink-0">
+              <img class="size-full" src="src/assets/images/nongthao.png" alt="">
+            </a>
+            <div id="mobile-menu-close" class="w-9">
+              <img src="src/assets/icons/close.svg" alt="">
+            </div>
+          </div>
+          <div class="flex items-center justify-between mt-7 h-[42px] bg-[#EBF1E7] rounded-full p-[3px]">
+            <input class="text-sm text-ct-text-color bg-transparent outline-none ml-4 placeholder:text-[#00000080]"
+              type="text" placeholder="Bạn muốn tìm...">
+            <div class="w-9">
+              <img class="img-cover" src="src/assets/icons/search.svg" alt="">
+            </div>
+          </div>
+          <div class="mt-3">
+            <div class="">
+              <div id="mobile-menu-product"
+                class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
+                <div class="font-semibold text-ct-primary uppercase">sản phẩm</div>
+                <img src="src/assets/icons/list-down.svg" alt="" class="">
+              </div>
+              <ul id="mobile-menu-product-item-box"
+                class="mb-3 hidden mt-1 *:border-b-[0.5px] *:border-[#0000004D] pl-[18px] *:text-black">
+                <li>
+                  <a class="link block size-full py-2" href="">Thảo dược</a>
+                </li>
+                <li>
+                  <a class="link block size-full py-2" href="">Nông sản</a>
+                </li>
+                <li>
+                  <a class="link block size-full py-2" href="">Hoa quả</a>
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <a href="" class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
+                <div class="font-semibold text-ct-primary uppercase">Về nông thảo</div>
+              </a>
+            </div>
+            <div class="">
+              <div class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
+                <div class="font-semibold text-ct-primary uppercase">Blog</div>
+                <img src="src/assets/icons/list-down.svg" alt="" class="">
+              </div>
+            </div>
+            <div class="">
+              <a href="" class="flex items-center justify-between py-2">
+                <div class="font-semibold text-ct-primary uppercase">Liên hệ</div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-[252px] h-[51px] mt-12 mb-4 grid place-content-center bg-ct-cta-color font-bold text-lg text-white rounded">
+            0988.818.841</div>
+          <a class="text-sm text-ct-primary block text-center">Gọi hỗ trợ ngay!</a>
+        </div>
+        <!-- End mobile menu -->
+
+
+        <div class="flex items-center justify-end basis-0 xs:basis-[230px] gap-4 order-2">
+          <div class="size-9 rounded-full hidden xs:grid place-content-center bg-[#EBF1E7]">
+            <img src="src/assets/icons/search2.svg" alt="search">
+          </div>
+          <div class="relative group">
+            <div id="cart-btn" class="size-7 xs:size-9 rounded-full bg-ct-primary grid place-content-center">
+              <img src="src/assets/icons/white-add-to-cart.svg" alt="add to cart">
+            </div>
+            <div
+              class="text-[9px] pt-0.5 rounded-full size-4 xs:size-5 grid place-content-center bg-ct-cta-color absolute text-white -top-1 right-0">
+              0
+            </div>
+            <div id="cart-box"
+              class="hidden group-hover:block w-[300px] bg-white border-[0.1px] border-gray-50 shadow absolute z-20 top-full right-0 xs:left-1/2 xs:-translate-x-1/2 p-[10px] before:absolute before:h-8 before:z-[19] before:-top-2 before:right-0 before:left-0">
+              <a href=""
+                class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
+                <img class="w-[31px] h-[27px]" src="src/assets/images/nongthao/cam.png" alt="">
+                <div class="line-clamp-1">Mứt chanh tây sấy lạnh 100% hữu cơ không đường ngon</div>
+                <div class="text-ct-text-color text-nowrap">x 1</div>
+              </a>
+              <a href=""
+                class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
+                <img class="w-[31px] h-[27px]" src="src/assets/images/nongthao/cam.png" alt="">
+                <div class="line-clamp-1">Mứt chanh tây sấy lạnh 100% hữu cơ không đường ngon</div>
+                <div class="text-ct-text-color text-nowrap">x 1</div>
+              </a>
+              <a href="" class="w-full block py-2.5 bg-ct-cta-color text-xs text-white text-center">
+                ĐẶT HÀNG NGAY
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="max-w-[1920px] mt-[50px] xs:mt-20 mx-auto">
+      <img class="w-full max-h-[490px] object-cover" src="src/assets/images/header/background-banner.png" alt="">
+    </div>
+
+    <div class="wrapper h-[600px]"></div>
+
+    <footer class="w-full">
+      <div class="grid max-h-[500px] overflow-hidden xs:grid-cols-8 grid-cols-3 w-full *:w-full">
+        <img src="src/assets/images/footer/nong-trai.png" alt="">
+        <img src="src/assets/images/footer/dau-tay.png" alt="">
+        <img src="src/assets/images/footer/thu-hoach-dau-tay.png" alt="">
+        <img class="hidden xs:block" src="src/assets/images/footer/thu-hoach.png" alt="">
+        <img class="hidden xs:block" src="src/assets/images/footer/1-qua-ca-chua.png" alt="">
+        <img class="hidden xs:block" src="src/assets/images/footer/nong-trai.png" alt="">
+        <img class="hidden xs:block" src="src/assets/images/footer/thu-hoach.png" alt="">
+        <img class="hidden xs:block" src="src/assets/images/footer/dau-tay.png" alt="">
+      </div>
+      <div class="bg-ct-primary py-10">
+        <div class="wrapper flex flex-col xs:flex-row gap-y-5 justify-between gap-x-12 text-[#D7E2CD]">
+          <div class="text-sm text-[#FFFFFFCC]">
+            <div class="brightness-150 w-[262px] h-[78px] mb-6 *:size-full *:object-cover">
+              <img src="src/assets/icons/logo-footer.svg" alt="">
+            </div>
+            <div class="">
+              MST: 012345678910 - Ngày cấp: 10/02/2022
+            </div>
+            <div class="">
+              Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội
+            </div>
+            <div class="flex items-center gap-4 mt-5">
+              <div class="text-nowrap">Liên kết</div>
+              <div class="flex items-center gap-[10px] *:block *:size-[26px] *:rounded-full *:overflow-hidden">
+                <a href="">
+                  <img src="src/assets/images/footer/shopper.png" alt="">
+                </a>
+                <a href="">
+                  <img src="src/assets/images/footer/tiki.png" alt="">
+                </a>
+                <a href="">
+                  <img src="src/assets/images/footer/lazada.png" alt="">
+                </a>
+                <a href="">
+                  <img src="src/assets/images/footer/facebook.png" alt="">
+                </a>
+                <a href="">
+                  <img src="src/assets/images/footer/in.png" alt="">
+                </a>
+                <a href="">
+                  <img src="src/assets/images/footer/tiktok.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="leading-6 text-sm">
+            <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">Liên hệ
+            </div>
+            <div class="mt-2">
+              <div class="flex gap-3">
+                <img class="flex-shrink-0 size-5 grid place-content-center" src="src/assets/icons/map-location.svg"
+                  alt="">
+                <div class="max-w-[248px]">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, P.Ngọc Khánh, Q.Ba
+                  Đình, Hà Nội
+                </div>
+              </div>
+              <div class="flex gap-3 my-3">
+                <img class="flex-shrink-0 size-5 grid place-content-center" src="src/assets/icons/phone.svg" alt="">
+                <div class="">0969.71.6848</div>
+              </div>
+              <div class="flex gap-3">
+                <img class="flex-shrink-0 size-5 grid place-content-center" src="src/assets/icons/plane-email.svg"
+                  alt="">
+                <div class="">hotro@nongthao.vn</div>
+              </div>
+            </div>
+          </div>
+          <div class="leading-6 text-sm flex-shrink-0">
+            <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">thông tin
+            </div>
+            <ul class="list-disc pl-4 space-y-[10px] mt-2">
+              <li>
+                <a class="hover:text-ct-secondary" href="">Giới thiệu Nông Thảo</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Điều khoản</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Chính sách bảo mật</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Hướng dẫn mua hàng</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Trả hàng & hoàn tiền</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Nông Thảo Blogs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="leading-6 text-sm">
+            <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">Đăng ký
+              nhận tin</div>
+            <div class="mt-2">
+              <div class="max-w-[270px]">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông Thảo</div>
+              <div class="flex mt-3 w-full">
+                <input class="pl-3 pr-1 placeholder:text-ct-primary flex-1 text-ct-text-color outline-none" type="text"
+                  placeholder="Email của bạn...">
+                <div class="w-12 h-12 bg-ct-secondary grid place-content-center cursor-pointer">
+                  <img src="src/assets/icons/plane-email.svg" alt="">
+                </div>
+              </div>
+              <div class="flex mt-7 items-center justify-between">
+                <div class="w-[130px] h-[40px]">
+                  <img class="img-cover" src="src/assets/images/footer/chung-nhan.png" alt="">
+                </div>
+                <div class="w-[83px] h-[40px]">
+                  <img src="src/assets/images/footer/dmca.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-10 bg-[#86A76A] text-sm text-[#CFDCC3] grid place-content-center">© 2024 - Bản quyền thuộc về Công
+        ty TNHH Nông Thảo</div>
+    </footer>
   </div>
 </body>
+
 </html>

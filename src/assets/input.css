@@ -14,5 +14,11 @@ html {
   @apply w-full bg-white;
 }
 .wrapper {
-  @apply w-full max-w-[1170px] mx-auto;
+  @apply w-full max-w-[1200px] mx-auto px-4;
+}
+.img-cover {
+  @apply object-cover w-full h-full overflow-hidden;
+}
+.link {
+  @apply hover:text-ct-primary;
 }
