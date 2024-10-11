@@ -1,459 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/output.css">
-    <script src="/src/assets/js/main.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/assets/output.css">
+  <script src="/src/assets/js/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <div class="w-full">
-        <header class="h-[50px] xs:h-20 bg-white shadow-[0px_4px_13px_0px_rgba(0,0,0,0.1)] fixed top-0 left-0 right-0 z-10">
-            <div class="wrapper h-full flex items-center justify-between">
-              <a href="" class="w-[138px] h-[28px] xs:w-[229px] xs:h-[44px] block flex-shrink-0 order-1 xs:order-none">
-                <img class="size-full" src="/src/assets/images/nongthao.png" alt="">
-              </a>
-              <ul class="hidden xs:flex font-semibold uppercase mx-3 gap-9 text-ct-heading-color flex-shrink-0 *:py-1">
-                <li class="relative group">
-                  <a class="link" href="">Sản phẩm</a>
-                  <div
-                    class="w-[198px] hidden group-hover:block bg-white border-[0.1px] border-gray-50 shadow px-3 absolute z-20 top-full left-1/2 -translate-x-1/2 text-sm uppercase font-semibold text-ct-heading-color *:block *:py-3 divide-y-[0.5px] divide-[#0000004D]">
-                    <a class="link" href="">thảo dược</a>
-                    <a class="link" href="">nông sản</a>
-                    <a class="link" href="">hoa quả hữu cơ</a>
-                  </div>
+  <div class="w-full">
+    <header class="h-[50px] xs:h-20 bg-white shadow-[0px_4px_13px_0px_rgba(0,0,0,0.1)] fixed top-0 left-0 right-0 z-10">
+      <div class="wrapper h-full flex items-center justify-between">
+        <a href="" class="w-[138px] h-[28px] xs:w-[229px] xs:h-[44px] block flex-shrink-0 order-1 xs:order-none">
+          <img class="size-full" src="/src/assets/images/nongthao.png" alt="">
+        </a>
+        <ul class="hidden xs:flex font-semibold uppercase mx-3 gap-9 text-ct-heading-color flex-shrink-0 *:py-1">
+          <li class="relative group">
+            <a class="link" href="">Sản phẩm</a>
+            <div
+              class="w-[198px] hidden group-hover:block bg-white border-[0.1px] border-gray-50 shadow px-3 absolute z-20 top-full left-1/2 -translate-x-1/2 text-sm uppercase font-semibold text-ct-heading-color *:block *:py-3 divide-y-[0.5px] divide-[#0000004D]">
+              <a class="link" href="">thảo dược</a>
+              <a class="link" href="">nông sản</a>
+              <a class="link" href="">hoa quả hữu cơ</a>
+            </div>
+          </li>
+          <li>
+            <a class="link text-ct-primary" href="">Về nông sản</a>
+          </li>
+          <li>
+            <a class="link" href="">Blog</a>
+          </li>
+          <li>
+            <a class="link" href="">Liên hệ</a>
+          </li>
+        </ul>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu-btn" class="size-6 block xs:hidden">
+          <img class="img-cover" src="/src/assets/icons/mobile-menu.svg" alt="">
+        </div>
+        <div id="mobile-menu"
+          class="fixed z-30 bg-slate-200 w-[288px] top-0 -left-full bottom-0 px-4 py-7 duration-300 ease-in-out">
+          <div class="flex items-center justify-between">
+            <a href="" class="w-[138px] h-[28px] block flex-shrink-0">
+              <img class="size-full" src="/src/assets/images/nongthao.png" alt="">
+            </a>
+            <div id="mobile-menu-close" class="w-9">
+              <img src="/src/assets/icons/close.svg" alt="">
+            </div>
+          </div>
+          <div class="flex items-center justify-between mt-7 h-[42px] bg-[#EBF1E7] rounded-full p-[3px]">
+            <input class="text-sm text-ct-text-color bg-transparent outline-none ml-4 placeholder:text-[#00000080]"
+              type="text" placeholder="Bạn muốn tìm...">
+            <div class="w-9">
+              <img class="img-cover" src="/src/assets/icons/search.svg" alt="">
+            </div>
+          </div>
+          <div class="mt-3">
+            <div class="">
+              <div id="mobile-menu-product"
+                class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
+                <div class="font-semibold text-ct-primary uppercase">sản phẩm</div>
+                <img src="/src/assets/icons/list-down.svg" alt="" class="">
+              </div>
+              <ul id="mobile-menu-product-item-box"
+                class="mb-3 hidden mt-1 *:border-b-[0.5px] *:border-[#0000004D] pl-[18px] *:text-black">
+                <li>
+                  <a class="link block size-full py-2" href="">Thảo dược</a>
                 </li>
                 <li>
-                  <a class="link text-ct-primary" href="">Về nông sản</a>
+                  <a class="link block size-full py-2" href="">Nông sản</a>
                 </li>
                 <li>
-                  <a class="link" href="">Blog</a>
-                </li>
-                <li>
-                  <a class="link" href="">Liên hệ</a>
+                  <a class="link block size-full py-2" href="">Hoa quả</a>
                 </li>
               </ul>
-      
-              <!-- Mobile menu -->
-              <div id="mobile-menu-btn" class="size-6 block xs:hidden">
-                <img class="img-cover" src="/src/assets/icons/mobile-menu.svg" alt="">
-              </div>
-              <div id="mobile-menu"
-                class="fixed z-30 bg-slate-200 w-[288px] top-0 -left-full bottom-0 px-4 py-7 duration-300 ease-in-out">
-                <div class="flex items-center justify-between">
-                  <a href="" class="w-[138px] h-[28px] block flex-shrink-0">
-                    <img class="size-full" src="/src/assets/images/nongthao.png" alt="">
-                  </a>
-                  <div id="mobile-menu-close" class="w-9">
-                    <img src="/src/assets/icons/close.svg" alt="">
-                  </div>
-                </div>
-                <div class="flex items-center justify-between mt-7 h-[42px] bg-[#EBF1E7] rounded-full p-[3px]">
-                  <input class="text-sm text-ct-text-color bg-transparent outline-none ml-4 placeholder:text-[#00000080]"
-                    type="text" placeholder="Bạn muốn tìm...">
-                  <div class="w-9">
-                    <img class="img-cover" src="/src/assets/icons/search.svg" alt="">
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <div class="">
-                    <div id="mobile-menu-product"
-                      class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
-                      <div class="font-semibold text-ct-primary uppercase">sản phẩm</div>
-                      <img src="/src/assets/icons/list-down.svg" alt="" class="">
-                    </div>
-                    <ul id="mobile-menu-product-item-box"
-                      class="mb-3 hidden mt-1 *:border-b-[0.5px] *:border-[#0000004D] pl-[18px] *:text-black">
-                      <li>
-                        <a class="link block size-full py-2" href="">Thảo dược</a>
-                      </li>
-                      <li>
-                        <a class="link block size-full py-2" href="">Nông sản</a>
-                      </li>
-                      <li>
-                        <a class="link block size-full py-2" href="">Hoa quả</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="">
-                    <a href="" class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
-                      <div class="font-semibold text-ct-primary uppercase">Về nông thảo</div>
-                    </a>
-                  </div>
-                  <div class="">
-                    <div class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
-                      <div class="font-semibold text-ct-primary uppercase">Blog</div>
-                      <img src="/src/assets/icons/list-down.svg" alt="" class="">
-                    </div>
-                  </div>
-                  <div class="">
-                    <a href="" class="flex items-center justify-between py-2">
-                      <div class="font-semibold text-ct-primary uppercase">Liên hệ</div>
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="w-[252px] h-[51px] mt-12 mb-4 grid place-content-center bg-ct-cta-color font-bold text-lg text-white rounded">
-                  0988.818.841</div>
-                <a class="text-sm text-ct-primary block text-center">Gọi hỗ trợ ngay!</a>
-              </div>
-              <!-- End mobile menu -->
-      
-      
-              <div class="flex items-center justify-end basis-0 xs:basis-[230px] gap-4 order-2">
-                <div class="size-9 rounded-full hidden xs:grid place-content-center bg-[#EBF1E7]">
-                  <img src="/src/assets/icons/search2.svg" alt="search">
-                </div>
-                <div class="relative group">
-                  <div id="cart-btn" class="size-7 xs:size-9 rounded-full bg-ct-primary grid place-content-center">
-                    <img src="/src/assets/icons/white-add-to-cart.svg" alt="add to cart">
-                  </div>
-                  <div
-                    class="text-[9px] pt-0.5 rounded-full size-4 xs:size-5 grid place-content-center bg-ct-cta-color absolute text-white -top-1 right-0">
-                    0
-                  </div>
-                  <div id="cart-box"
-                    class="hidden group-hover:block w-[300px] bg-white border-[0.1px] border-gray-50 shadow absolute z-20 top-full right-0 xs:left-1/2 xs:-translate-x-1/2 p-[10px] before:absolute before:h-8 before:z-[19] before:-top-2 before:right-0 before:left-0">
-                    <a href=""
-                      class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
-                      <img class="w-[31px] h-[27px]" src="/src/assets/images/nongthao/cam.png" alt="">
-                      <div class="line-clamp-1">Mứt chanh tây sấy lạnh 100% hữu cơ không đường ngon</div>
-                      <div class="text-ct-text-color text-nowrap">x 1</div>
-                    </a>
-                    <a href=""
-                      class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
-                      <img class="w-[31px] h-[27px]" src="/src/assets/images/nongthao/cam.png" alt="">
-                      <div class="line-clamp-1">Mứt chanh tây sấy lạnh 100% hữu cơ không đường ngon</div>
-                      <div class="text-ct-text-color text-nowrap">x 1</div>
-                    </a>
-                    <a href="" class="w-full block py-2.5 bg-ct-cta-color text-xs text-white text-center">
-                      ĐẶT HÀNG NGAY
-                    </a>
-                  </div>
-                </div>
+            </div>
+            <div class="">
+              <a href="" class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
+                <div class="font-semibold text-ct-primary uppercase">Về nông thảo</div>
+              </a>
+            </div>
+            <div class="">
+              <div class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
+                <div class="font-semibold text-ct-primary uppercase">Blog</div>
+                <img src="/src/assets/icons/list-down.svg" alt="" class="">
               </div>
             </div>
-        </header>
-        <div class="max-w-[1920px] pt-20 mx-auto h-[335px] bg-red-500 bg-[url('/src/assets/images/lien-he.png')] bg-no-repeat bg-cover bg-center flex justify-center items-center">
-            <p class="text-white text-4xl">VỀ NÔNG THẢO</p>
+            <div class="">
+              <a href="" class="flex items-center justify-between py-2">
+                <div class="font-semibold text-ct-primary uppercase">Liên hệ</div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-[252px] h-[51px] mt-12 mb-4 grid place-content-center bg-ct-cta-color font-bold text-lg text-white rounded">
+            0988.818.841</div>
+          <a class="text-sm text-ct-primary block text-center">Gọi hỗ trợ ngay!</a>
         </div>
-        <div class="wrapper">
-            <div class="mt-[22.5px] flex items-center">
-                <a href="#" class="text-sm no-underline">Trang chủ</a>
-                <svg class="mx-[10px]" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.98855 5.49987L1.14125 0.652579L-3.73949e-07 1.79222L3.71008 5.49987L-4.98504e-08 9.20672L1.14045 10.3472L5.98855 5.49987Z" fill="#666666"/>
-                </svg>
-                <a href="#" class="text-[#C4C4C4] no-underline">Về Nông Thảo</a>
+        <!-- End mobile menu -->
+
+
+        <div class="flex items-center justify-end basis-0 xs:basis-[230px] gap-4 order-2">
+          <div class="size-9 rounded-full hidden xs:grid place-content-center bg-[#EBF1E7]">
+            <img src="/src/assets/icons/search2.svg" alt="search">
+          </div>
+          <div class="relative group">
+            <div id="cart-btn" class="size-7 xs:size-9 rounded-full bg-ct-primary grid place-content-center">
+              <img src="/src/assets/icons/white-add-to-cart.svg" alt="add to cart">
             </div>
-            <div class="flex my-[60px]">
-                <div class="max-w-[527px] xl:mr-[110px]">
-                    <p>
-                        Thương hiệu <b>Nông Thảo</b> bắt nguồn từ nhu cầu sử dụng các sản phẩm nông sản tự nhiên, thảo dược tốt cho cơ thể. Chúng tôi sản xuất và bán các loại sản phẩm nông - thảo chất lượng cao. Chỉ những thành phần tự nhiên, nguyên chất mới được sử dụng - không có chất bảo quản, hóa học.
-                        <br>
-                        <br>
-                        Nông Thảo tạo ra nguồn nguyên liệu tự nhiên theo đúng cách mà bất kỳ ai cũng sẽ làm cho gia đình của mình. Bằng cách tuân theo các nguyên tắc sản xuất, thực hành tốt trồng trọt, sản phẩm chúng tôi cung cấp luôn an toàn và tốt cho sức khỏe của bạn.
-                        <br>
-                        <br>
-                        Thương hiệu Nông Thảo đã lên kệ các siêu thị hàng đầu như Winmart, Lotte, Tops Market. Ngoài ra, Nông Thảo còn có mặt trên nền tảng bán hàng trực tuyến như Shopee, Lazada, Tiki để phân phối sản phẩm đến tay người tiêu dùng tốt hơn.
-                        <br>
-                        <br>
-                        Năm 2025, Nông Thảo được bình chọn là thương hiệu vì sức khỏe cộng đồng do độc giả Báo Sức khỏe & Đời sống bình chọn.
-                    </p>
+            <div
+              class="text-[9px] pt-0.5 rounded-full size-4 xs:size-5 grid place-content-center bg-ct-cta-color absolute text-white -top-1 right-0">
+              0
+            </div>
+            <div id="cart-box"
+              class="hidden group-hover:block w-[300px] bg-white border-[0.1px] border-gray-50 shadow absolute z-20 top-full right-0 xs:left-1/2 xs:-translate-x-1/2 p-[10px] before:absolute before:h-8 before:z-[19] before:-top-2 before:right-0 before:left-0">
+              <a href=""
+                class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
+                <img class="w-[31px] h-[27px]" src="/src/assets/images/nongthao/cam.png" alt="">
+                <div class="line-clamp-1">Mứt chanh tây sấy lạnh 100% hữu cơ không đường ngon</div>
+                <div class="text-ct-text-color text-nowrap">x 1</div>
+              </a>
+              <a href=""
+                class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
+                <img class="w-[31px] h-[27px]" src="/src/assets/images/nongthao/cam.png" alt="">
+                <div class="line-clamp-1">Mứt chanh tây sấy lạnh 100% hữu cơ không đường ngon</div>
+                <div class="text-ct-text-color text-nowrap">x 1</div>
+              </a>
+              <a href="" class="w-full block py-2.5 bg-ct-cta-color text-xs text-white text-center">
+                ĐẶT HÀNG NGAY
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="max-w-[1920px] pt-20 mx-auto h-[335px] bg-red-500 bg-[url('/src/assets/images/lien-he.png')] bg-no-repeat bg-cover bg-center xs:flex hidden justify-center items-center">
+      <p class="text-white text-4xl">VỀ NÔNG THẢO</p>
+    </div>
+
+    <div class="wrapper">
+      <div class="pt-20 xs:pt-4 flex items-center">
+        <a href="#" class="text-sm font-semibold text-nowrap no-underline link">Trang chủ</a>
+        <svg class="mx-[10px]" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.98855 5.49987L1.14125 0.652579L-3.73949e-07 1.79222L3.71008 5.49987L-4.98504e-08 9.20672L1.14045 10.3472L5.98855 5.49987Z"
+            fill="#666666" />
+        </svg>
+        <a href="#" class="text-[#C4C4C4] link text-nowrap">Về Nông Thảo</a>
+      </div>
+
+      <div class="flex items-center justify-center xs:hidden pt-4">
+        <img class="xs:w-[42px] xs:h-[26.03px] w-[28px] h-[16px] mr-[6px] flex-shrink-0"
+          src="../../assets/images/ve-nong-thao/image-3.png" alt="Image 3">
+        <h2 class="xs:text-2xl text-lg font-bold uppercase text-nowrap">về nông thảo</h2>
+      </div>
+
+      <div class="flex xs:my-[60px] mt-4 mb-12 xs:flex-row flex-col gap-y-4 xs:gap-0">
+        <div class="max-w-[527px] xl:mr-[110px]">
+          <p>
+            Thương hiệu <b>Nông Thảo</b> bắt nguồn từ nhu cầu sử dụng các sản phẩm nông sản tự nhiên, thảo dược tốt cho
+            cơ thể. Chúng tôi sản xuất và bán các loại sản phẩm nông - thảo chất lượng cao. Chỉ những thành phần tự
+            nhiên, nguyên chất mới được sử dụng - không có chất bảo quản, hóa học.
+            <br>
+            <br>
+            Nông Thảo tạo ra nguồn nguyên liệu tự nhiên theo đúng cách mà bất kỳ ai cũng sẽ làm cho gia đình của mình.
+            Bằng cách tuân theo các nguyên tắc sản xuất, thực hành tốt trồng trọt, sản phẩm chúng tôi cung cấp luôn an
+            toàn và tốt cho sức khỏe của bạn.
+            <br>
+            <br>
+            Thương hiệu Nông Thảo đã lên kệ các siêu thị hàng đầu như Winmart, Lotte, Tops Market. Ngoài ra, Nông Thảo
+            còn có mặt trên nền tảng bán hàng trực tuyến như Shopee, Lazada, Tiki để phân phối sản phẩm đến tay người
+            tiêu dùng tốt hơn.
+            <br>
+            <br>
+            Năm 2025, Nông Thảo được bình chọn là thương hiệu vì sức khỏe cộng đồng do độc giả Báo Sức khỏe & Đời sống
+            bình chọn.
+          </p>
+        </div>
+        <div class="max-w-[531px]">
+          <img src="/src/assets/images/ve-nong-thao/image-1.png" alt="Image 1">
+        </div>
+      </div>
+
+      <div class="flex xs:py-10 pb-0 flex-col xs:flex-row">
+        <div class="max-w-[531px] order-1 xs:order-none rounded-sm xs:mr-[73px]">
+          <img src="../../assets/images/ve-nong-thao/image-2.png" alt="Image 2">
+        </div>
+        <div class="max-w-[573px] flex flex-col justify-between xs:mb-0 mb-7">
+          <div class="flex items-center">
+            <img class="xs:w-[42px] xs:h-[26.03px] w-[22px] h-[12px] xs:mr-[6px] mr-2 flex-shrink-0"
+              src="../../assets/images/ve-nong-thao/image-3.png" alt="Image 3">
+            <h2 class="xs:text-2xl text-lg font-bold">TẠI SAO LỰA CHỌN NÔNG THẢO?</h2>
+          </div>
+          <div class="xs:my-0 my-7">
+            <p class="text-base text-center xs:text-start">Chúng tôi mang đến cho bạn các sản phẩm nông sản và thảo
+              dược được sản xuất sạch bền
+              vững
+              và không có hóa chất.</p>
+          </div>
+          <div>
+            <div class="flex">
+              <div class="relative w-[72px] h-[72px] bg-ct-primary rounded-full flex items-center justify-center mr-6">
+                <span class="text-[32px] font-bold text-white text">01</span>
+                <div
+                  class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2">
                 </div>
-                <div class="max-w-[531px]">
-                    <img src="/src/assets/images/ve-nong-thao/image-1.png" alt="Image 1">
-                </div>
+              </div>
+              <div class="w-3/4">
+                <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">100% hữu cơ</span>
+                <p class="text-base line-clamp-2">
+                  Thực hành tốt trồng trọt theo tiêu chuẩn GACP-WHO để nguyên liệu an toàn cho sức khỏe của bạn
+                </p>
+              </div>
+            </div>
+            <div class="xs:my-2 my-1 ml-9">
+              <img class="xs:h-[50px] h-[38px]" src="../../assets/images/ve-nong-thao/image-4.png" alt="Image 4">
             </div>
             <div class="flex">
-                <div class="max-w-[531px] rounded-sm mr-[73px]">
-                    <img src="/src/assets/images/ve-nong-thao//image-2.png" alt="Image 2">
+              <div class="relative w-[72px] h-[72px]  bg-ct-primary rounded-full flex items-center justify-center mr-6">
+                <span class="text-[32px] font-bold text-white text">02</span>
+                <div
+                  class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2">
                 </div>
-                <div class="max-w-[573px] flex flex-col justify-between">
-                    <div class="flex">
-                        <img class="w-[42px] h-[26.03px] mr-[6px]" src="/src/assets/images/ve-nong-thao/image-3.png" alt="Image 3">
-                        <h2 class="text-[28px] font-bold">TẠI SAO LỰA CHỌN NÔNG THẢO?</h2>
-                    </div>
-                    <div>
-                        <p class="text-base">Chúng tôi mang đến cho bạn các sản phẩm nông sản và thảo dược được sản xuất sạch bền vững và không có hóa chất.</p>
-                    </div>
-                    <div>
-                        <div class="flex">
-                            <div class="relative w-[72px] h-[72px] bg-ct-primary rounded-full flex items-center justify-center mr-6">
-                                <span class="text-[32px] font-bold text-white text">01</span>
-                                <div class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2"></div>
-                            </div>
-                            <div class="w-3/4">
-                                <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">100% hữu cơ</span>
-                                <p class="text-base ">
-                                    Thực hành tốt trồng trọt theo tiêu chuẩn GACP-WHO để nguyên liệu an toàn cho sức khỏe của bạn
-                                </p>
-                            </div>
-                        </div>
-                        <div class="my-[9px] ml-9">
-                            <img class="h-[50px]" src="/src/assets/images/ve-nong-thao/image-4.png" alt="Image 4">
-                        </div>
-                        <div class="flex">
-                            <div class="relative w-[72px] h-[72px]  bg-ct-primary rounded-full flex items-center justify-center mr-6">
-                                <span class="text-[32px] font-bold text-white text">02</span>
-                                <div class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2"></div>
-                            </div>
-                            <div class="w-3/4">
-                                <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">Công nghệ</span>
-                                <p class="text-base ">
-                                    Áp dụng công nghệ sản xuất tiêu chuẩn tùy theo loại sản phẩm. Tuân thủ phương pháp sản xuất khoa học, bền vững.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="my-[9px] ml-9">
-                            <img class="h-[50px]" src="/src/assets/images/ve-nong-thao/image-4.png" alt="Image 4">
-                        </div>
-                        <div class="flex">
-                            <div class="relative w-[72px] h-[72px]  bg-ct-primary rounded-full flex items-center justify-center mr-6">
-                                <span class="text-[32px] font-bold text-white text">03</span>
-                                <div class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2"></div>
-                            </div>
-                            <div class="w-3/4">
-                                <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">Trách nhiệm</span>
-                                <p class="text-base ">
-                                    Nông Thảo chăm chút từng khâu sản xuất, kiểm định và phân phối để sản phẩm đến tay bạn có chất lượng tốt nhất
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="w-3/4">
+                <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">Công nghệ</span>
+                <p class="text-base line-clamp-2">
+                  Áp dụng công nghệ sản xuất tiêu chuẩn tùy theo loại sản phẩm. Tuân thủ phương pháp sản xuất khoa
+                  học,
+                  bền vững.
+                </p>
+              </div>
             </div>
-            <div class="mt-[60px]">
-                <div class=" bg-[url('/src/assets/images/ve-nong-thao/image-5.png')] bg-cover bg-center h-[310px] text-white flex flex-col justify-center items-center ">
-                    <div class="w-[229px] brightness-200">
-                        <img src="/src/assets/images/ve-nong-thao/image-6.png" alt="Image 6">
-                    </div>
-                    <h1 class="font-dancing text-5xl mt-8">Tinh hoa từ thiên thiên cho cơ thể khỏe mạnh.</h1>
-                    <div class="max-w-[179px] brightness-180 w-full mt-8 bg-ct-secondary border-2 border-solid border-ct-secondary">
-                    </div>
-                </div>
+            <div class="xs:my-2 my-1 ml-9">
+              <img class="h-[50px]" src="../../assets/images/ve-nong-thao/image-4.png" alt="Image 4">
             </div>
-            <div class="my-[60px] flex flex-col items-center">
-                <div class="flex w-1/3 justify-around">
-                    <div class="max-w-[42px]">
-                        <img  class="w-full" src="/src/assets/images/ve-nong-thao/image-7.png" alt="Image 7">
-                    </div>
-                    <h1 class="text-3xl font-bold">TIN TỨC & KIẾN THỨC</h1>
+            <div class="flex">
+              <div class="relative w-[72px] h-[72px]  bg-ct-primary rounded-full flex items-center justify-center mr-6">
+                <span class="text-[32px] font-bold text-white text">03</span>
+                <div
+                  class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2">
                 </div>
-                <div class="mt-[34px] grid grid-cols-3 gap-[30px]">
-                    <div class="flex flex-col justify-between shadow-custom">
-                        <img src="/src/assets/images/ve-nong-thao/image-8.png" alt="Image 8">
-                        <div class="xl:h-[215px]">
-                            <div class="flex flex-col justify-between h-full px-5 pt-[14px] pb-[17px]">
-                                <span class="text-xs text-[#C4C4C4] hover:text-ct-secondary">NÔNG NGHIỆP SÁCH</span>
-                                <h4 class="text-lg text-ct-heading-color hover:text-ct-primary font-bold">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</h4>
-                                <p class="text-base text-[#000000BD]">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
-                                <hr>
-                                <div class="flex justify-between">
-                                    <div class="flex items-center w-1/2">
-                                        <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
-                                        <div class="w-4 h-4 flex justify-center items-center">
-                                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.34516 10.0084L5.166 8.83086L8.99933 4.99753L5.166 1.1642L6.34516 -0.00830078L11.3535 5.00003L6.346 10.0084H6.34516ZM1.82433 10.0084L0.645996 8.83086L4.47933 4.99753L0.645996 1.17003L1.82433 -0.00830078L6.8335 5.00003L1.82516 10.0084H1.82433Z" fill="#68C114"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center w-1/6 justify-around">
-                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.891976 5C0.937514 5.07869 0.997884 5.17898 1.07267 5.29478C1.26476 5.59221 1.54924 5.98775 1.91856 6.38169C2.6648 7.17768 3.70813 7.91667 5 7.91667C6.29187 7.91667 7.3352 7.17768 8.08144 6.38169C8.45076 5.98775 8.73523 5.59221 8.92733 5.29478C9.00212 5.17898 9.06249 5.07869 9.10802 5C9.06249 4.92131 9.00212 4.82102 8.92733 4.70522C8.73523 4.40779 8.45076 4.01225 8.08144 3.61831C7.3352 2.82232 6.29187 2.08333 5 2.08333C3.70813 2.08333 2.6648 2.82232 1.91856 3.61831C1.54924 4.01225 1.26476 4.40779 1.07267 4.70522C0.997884 4.82102 0.937514 4.92131 0.891976 5ZM9.58333 5C9.95601 4.81366 9.95594 4.81352 9.95586 4.81337L9.95519 4.81203L9.95375 4.80918L9.94903 4.79993C9.94505 4.7922 9.93943 4.78138 9.93219 4.76768C9.91769 4.74029 9.89666 4.70135 9.86918 4.6525C9.81425 4.55485 9.73339 4.4173 9.62736 4.25311C9.4158 3.92555 9.10132 3.48775 8.68939 3.04836C7.87313 2.17768 6.62479 1.25 5 1.25C3.3752 1.25 2.12687 2.17768 1.31061 3.04836C0.898681 3.48775 0.584194 3.92555 0.37264 4.25311C0.266604 4.4173 0.185747 4.55485 0.130821 4.6525C0.103343 4.70135 0.0823084 4.74029 0.0678139 4.76768C0.0605653 4.78138 0.054948 4.7922 0.0509741 4.79993L0.0462458 4.80918L0.0448079 4.81203L0.0443209 4.813C0.0442443 4.81315 0.0439887 4.81366 0.416667 5L0.0439887 4.81366C-0.0146629 4.93096 -0.0146629 5.06904 0.0439887 5.18634L0.416667 5C0.0439887 5.18634 0.0439121 5.18619 0.0439887 5.18634L0.0448079 5.18797L0.0462458 5.19082L0.0509741 5.20007C0.054948 5.2078 0.0605653 5.21862 0.0678139 5.23232C0.0823084 5.25971 0.103343 5.29865 0.130821 5.3475C0.185747 5.44515 0.266604 5.5827 0.37264 5.74689C0.584194 6.07445 0.898681 6.51225 1.31061 6.95164C2.12687 7.82232 3.3752 8.75 5 8.75C6.62479 8.75 7.87313 7.82232 8.68939 6.95164C9.10132 6.51225 9.4158 6.07445 9.62736 5.74689C9.73339 5.5827 9.81425 5.44515 9.86918 5.3475C9.89666 5.29865 9.91769 5.25971 9.93219 5.23232C9.93943 5.21862 9.94505 5.2078 9.94903 5.20007L9.95375 5.19082L9.95519 5.18797L9.95568 5.187C9.95575 5.18685 9.95601 5.18634 9.58333 5ZM9.58333 5L9.95601 5.18634C10.0147 5.06904 10.0145 4.93067 9.95586 4.81337L9.58333 5Z" fill="#828282"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.99967 4.16659C4.53944 4.16659 4.16634 4.53968 4.16634 4.99992C4.16634 5.46016 4.53944 5.83325 4.99967 5.83325C5.45991 5.83325 5.83301 5.46016 5.83301 4.99992C5.83301 4.53968 5.45991 4.16659 4.99967 4.16659ZM3.33301 4.99992C3.33301 4.07944 4.0792 3.33325 4.99967 3.33325C5.92015 3.33325 6.66634 4.07944 6.66634 4.99992C6.66634 5.92039 5.92015 6.66658 4.99967 6.66658C4.0792 6.66658 3.33301 5.92039 3.33301 4.99992Z" fill="#828282"/>
-                                        </svg>
-                                        <span>2.648</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col justify-between shadow-custom">
-                        <img src="/src/assets/images/ve-nong-thao/image-8.png" alt="Image 8">
-                        <div class="xl:h-[215px]">
-                            <div class="flex flex-col justify-between h-full px-5 pt-[14px] pb-[17px]">
-                                <span class="text-xs text-[#C4C4C4] hover:text-ct-secondary">NÔNG NGHIỆP SÁCH</span>
-                                <h4 class="text-lg text-ct-heading-color hover:text-ct-primary font-bold">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</h4>
-                                <p class="text-base text-[#000000BD]">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
-                                <hr>
-                                <div class="flex justify-between">
-                                    <div class="flex items-center w-1/2">
-                                        <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
-                                        <div class="w-4 h-4 flex justify-center items-center">
-                                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.34516 10.0084L5.166 8.83086L8.99933 4.99753L5.166 1.1642L6.34516 -0.00830078L11.3535 5.00003L6.346 10.0084H6.34516ZM1.82433 10.0084L0.645996 8.83086L4.47933 4.99753L0.645996 1.17003L1.82433 -0.00830078L6.8335 5.00003L1.82516 10.0084H1.82433Z" fill="#68C114"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center w-1/6 justify-around">
-                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.891976 5C0.937514 5.07869 0.997884 5.17898 1.07267 5.29478C1.26476 5.59221 1.54924 5.98775 1.91856 6.38169C2.6648 7.17768 3.70813 7.91667 5 7.91667C6.29187 7.91667 7.3352 7.17768 8.08144 6.38169C8.45076 5.98775 8.73523 5.59221 8.92733 5.29478C9.00212 5.17898 9.06249 5.07869 9.10802 5C9.06249 4.92131 9.00212 4.82102 8.92733 4.70522C8.73523 4.40779 8.45076 4.01225 8.08144 3.61831C7.3352 2.82232 6.29187 2.08333 5 2.08333C3.70813 2.08333 2.6648 2.82232 1.91856 3.61831C1.54924 4.01225 1.26476 4.40779 1.07267 4.70522C0.997884 4.82102 0.937514 4.92131 0.891976 5ZM9.58333 5C9.95601 4.81366 9.95594 4.81352 9.95586 4.81337L9.95519 4.81203L9.95375 4.80918L9.94903 4.79993C9.94505 4.7922 9.93943 4.78138 9.93219 4.76768C9.91769 4.74029 9.89666 4.70135 9.86918 4.6525C9.81425 4.55485 9.73339 4.4173 9.62736 4.25311C9.4158 3.92555 9.10132 3.48775 8.68939 3.04836C7.87313 2.17768 6.62479 1.25 5 1.25C3.3752 1.25 2.12687 2.17768 1.31061 3.04836C0.898681 3.48775 0.584194 3.92555 0.37264 4.25311C0.266604 4.4173 0.185747 4.55485 0.130821 4.6525C0.103343 4.70135 0.0823084 4.74029 0.0678139 4.76768C0.0605653 4.78138 0.054948 4.7922 0.0509741 4.79993L0.0462458 4.80918L0.0448079 4.81203L0.0443209 4.813C0.0442443 4.81315 0.0439887 4.81366 0.416667 5L0.0439887 4.81366C-0.0146629 4.93096 -0.0146629 5.06904 0.0439887 5.18634L0.416667 5C0.0439887 5.18634 0.0439121 5.18619 0.0439887 5.18634L0.0448079 5.18797L0.0462458 5.19082L0.0509741 5.20007C0.054948 5.2078 0.0605653 5.21862 0.0678139 5.23232C0.0823084 5.25971 0.103343 5.29865 0.130821 5.3475C0.185747 5.44515 0.266604 5.5827 0.37264 5.74689C0.584194 6.07445 0.898681 6.51225 1.31061 6.95164C2.12687 7.82232 3.3752 8.75 5 8.75C6.62479 8.75 7.87313 7.82232 8.68939 6.95164C9.10132 6.51225 9.4158 6.07445 9.62736 5.74689C9.73339 5.5827 9.81425 5.44515 9.86918 5.3475C9.89666 5.29865 9.91769 5.25971 9.93219 5.23232C9.93943 5.21862 9.94505 5.2078 9.94903 5.20007L9.95375 5.19082L9.95519 5.18797L9.95568 5.187C9.95575 5.18685 9.95601 5.18634 9.58333 5ZM9.58333 5L9.95601 5.18634C10.0147 5.06904 10.0145 4.93067 9.95586 4.81337L9.58333 5Z" fill="#828282"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.99967 4.16659C4.53944 4.16659 4.16634 4.53968 4.16634 4.99992C4.16634 5.46016 4.53944 5.83325 4.99967 5.83325C5.45991 5.83325 5.83301 5.46016 5.83301 4.99992C5.83301 4.53968 5.45991 4.16659 4.99967 4.16659ZM3.33301 4.99992C3.33301 4.07944 4.0792 3.33325 4.99967 3.33325C5.92015 3.33325 6.66634 4.07944 6.66634 4.99992C6.66634 5.92039 5.92015 6.66658 4.99967 6.66658C4.0792 6.66658 3.33301 5.92039 3.33301 4.99992Z" fill="#828282"/>
-                                        </svg>
-                                        <span>2.648</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col justify-between shadow-custom">
-                        <img src="/src/assets/images/ve-nong-thao/image-8.png" alt="Image 8">
-                        <div class="xl:h-[215px]">
-                            <div class="flex flex-col justify-between h-full px-5 pt-[14px] pb-[17px]">
-                                <span class="text-xs text-[#C4C4C4] hover:text-ct-secondary">NÔNG NGHIỆP SÁCH</span>
-                                <h4 class="text-lg text-ct-heading-color hover:text-ct-primary font-bold">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</h4>
-                                <p class="text-base text-[#000000BD]">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
-                                <hr>
-                                <div class="flex justify-between">
-                                    <div class="flex items-center w-1/2">
-                                        <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
-                                        <div class="w-4 h-4 flex justify-center items-center">
-                                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.34516 10.0084L5.166 8.83086L8.99933 4.99753L5.166 1.1642L6.34516 -0.00830078L11.3535 5.00003L6.346 10.0084H6.34516ZM1.82433 10.0084L0.645996 8.83086L4.47933 4.99753L0.645996 1.17003L1.82433 -0.00830078L6.8335 5.00003L1.82516 10.0084H1.82433Z" fill="#68C114"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center w-1/6 justify-around">
-                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.891976 5C0.937514 5.07869 0.997884 5.17898 1.07267 5.29478C1.26476 5.59221 1.54924 5.98775 1.91856 6.38169C2.6648 7.17768 3.70813 7.91667 5 7.91667C6.29187 7.91667 7.3352 7.17768 8.08144 6.38169C8.45076 5.98775 8.73523 5.59221 8.92733 5.29478C9.00212 5.17898 9.06249 5.07869 9.10802 5C9.06249 4.92131 9.00212 4.82102 8.92733 4.70522C8.73523 4.40779 8.45076 4.01225 8.08144 3.61831C7.3352 2.82232 6.29187 2.08333 5 2.08333C3.70813 2.08333 2.6648 2.82232 1.91856 3.61831C1.54924 4.01225 1.26476 4.40779 1.07267 4.70522C0.997884 4.82102 0.937514 4.92131 0.891976 5ZM9.58333 5C9.95601 4.81366 9.95594 4.81352 9.95586 4.81337L9.95519 4.81203L9.95375 4.80918L9.94903 4.79993C9.94505 4.7922 9.93943 4.78138 9.93219 4.76768C9.91769 4.74029 9.89666 4.70135 9.86918 4.6525C9.81425 4.55485 9.73339 4.4173 9.62736 4.25311C9.4158 3.92555 9.10132 3.48775 8.68939 3.04836C7.87313 2.17768 6.62479 1.25 5 1.25C3.3752 1.25 2.12687 2.17768 1.31061 3.04836C0.898681 3.48775 0.584194 3.92555 0.37264 4.25311C0.266604 4.4173 0.185747 4.55485 0.130821 4.6525C0.103343 4.70135 0.0823084 4.74029 0.0678139 4.76768C0.0605653 4.78138 0.054948 4.7922 0.0509741 4.79993L0.0462458 4.80918L0.0448079 4.81203L0.0443209 4.813C0.0442443 4.81315 0.0439887 4.81366 0.416667 5L0.0439887 4.81366C-0.0146629 4.93096 -0.0146629 5.06904 0.0439887 5.18634L0.416667 5C0.0439887 5.18634 0.0439121 5.18619 0.0439887 5.18634L0.0448079 5.18797L0.0462458 5.19082L0.0509741 5.20007C0.054948 5.2078 0.0605653 5.21862 0.0678139 5.23232C0.0823084 5.25971 0.103343 5.29865 0.130821 5.3475C0.185747 5.44515 0.266604 5.5827 0.37264 5.74689C0.584194 6.07445 0.898681 6.51225 1.31061 6.95164C2.12687 7.82232 3.3752 8.75 5 8.75C6.62479 8.75 7.87313 7.82232 8.68939 6.95164C9.10132 6.51225 9.4158 6.07445 9.62736 5.74689C9.73339 5.5827 9.81425 5.44515 9.86918 5.3475C9.89666 5.29865 9.91769 5.25971 9.93219 5.23232C9.93943 5.21862 9.94505 5.2078 9.94903 5.20007L9.95375 5.19082L9.95519 5.18797L9.95568 5.187C9.95575 5.18685 9.95601 5.18634 9.58333 5ZM9.58333 5L9.95601 5.18634C10.0147 5.06904 10.0145 4.93067 9.95586 4.81337L9.58333 5Z" fill="#828282"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.99967 4.16659C4.53944 4.16659 4.16634 4.53968 4.16634 4.99992C4.16634 5.46016 4.53944 5.83325 4.99967 5.83325C5.45991 5.83325 5.83301 5.46016 5.83301 4.99992C5.83301 4.53968 5.45991 4.16659 4.99967 4.16659ZM3.33301 4.99992C3.33301 4.07944 4.0792 3.33325 4.99967 3.33325C5.92015 3.33325 6.66634 4.07944 6.66634 4.99992C6.66634 5.92039 5.92015 6.66658 4.99967 6.66658C4.0792 6.66658 3.33301 5.92039 3.33301 4.99992Z" fill="#828282"/>
-                                        </svg>
-                                        <span>2.648</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-[30px]">
-                    <button type="button" class="w-40 h-[45px] text-base text-ct-primary border border-ct-primary border-solid ">Xem tất cả</button>
-                </div>
-                <div class="w-40 mt-[7px] border border-ct-primary border-solid"></div>
-                
-            </div>  
+              </div>
+              <div class="w-3/4">
+                <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">Trách nhiệm</span>
+                <p class="text-base line-clamp-2">
+                  Nông Thảo chăm chút từng khâu sản xuất, kiểm định và phân phối để sản phẩm đến tay bạn có chất lượng
+                  tốt
+                  nhất
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <footer class="w-full">
-            <div class="grid max-h-[500px] overflow-hidden xs:grid-cols-8 grid-cols-3 w-full *:w-full">
-              <img src="/src/assets/images/footer/nong-trai.png" alt="">
-              <img src="/src/assets/images/footer/dau-tay.png" alt="">
-              <img src="/src/assets/images/footer/thu-hoach-dau-tay.png" alt="">
-              <img class="hidden xs:block" src="/src/assets/images/footer/thu-hoach.png" alt="">
-              <img class="hidden xs:block" src="/src/assets/images/footer/1-qua-ca-chua.png" alt="">
-              <img class="hidden xs:block" src="/src/assets/images/footer/nong-trai.png" alt="">
-              <img class="hidden xs:block" src="/src/assets/images/footer/thu-hoach.png" alt="">
-              <img class="hidden xs:block" src="/src/assets/images/footer/dau-tay.png" alt="">
-            </div>
-            <div class="bg-ct-primary py-10">
-              <div class="wrapper flex flex-col xs:flex-row gap-y-5 justify-between gap-x-12 text-[#D7E2CD]">
-                <div class="text-sm text-[#FFFFFFCC]">
-                  <div class="brightness-150 w-[262px] h-[78px] mb-6 *:size-full *:object-cover">
-                    <img src="/src/assets/icons/logo-footer.svg" alt="">
-                  </div>
-                  <div class="">
-                    MST: 012345678910 - Ngày cấp: 10/02/2022
-                  </div>
-                  <div class="">
-                    Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội
-                  </div>
-                  <div class="flex items-center gap-4 mt-5">
-                    <div class="text-nowrap">Liên kết</div>
-                    <div class="flex items-center gap-[10px] *:block *:size-[26px] *:rounded-full *:overflow-hidden">
-                      <a href="">
-                        <img src="/src/assets/images/footer/shopper.png" alt="">
-                      </a>
-                      <a href="">
-                        <img src="/src/assets/images/footer/tiki.png" alt="">
-                      </a>
-                      <a href="">
-                        <img src="/src/assets/images/footer/lazada.png" alt="">
-                      </a>
-                      <a href="">
-                        <img src="/src/assets/images/footer/facebook.png" alt="">
-                      </a>
-                      <a href="">
-                        <img src="/src/assets/images/footer/in.png" alt="">
-                      </a>
-                      <a href="">
-                        <img src="/src/assets/images/footer/tiktok.png" alt="">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="leading-6 text-sm">
-                  <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">Liên hệ
-                  </div>
-                  <div class="mt-2">
-                    <div class="flex gap-3">
-                      <img class="flex-shrink-0 size-5 grid place-content-center" src="/src/assets/icons/map-location.svg"
-                        alt="">
-                      <div class="max-w-[248px]">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, P.Ngọc Khánh, Q.Ba
-                        Đình, Hà Nội
+      </div>
+
+      <div class="mt-[60px] hidden xs:block">
+        <div
+          class=" bg-[url('/src/assets/images/ve-nong-thao/image-5.png')] bg-cover bg-center h-[310px] text-white flex flex-col justify-center items-center ">
+          <div class="w-[229px] brightness-200">
+            <img src="/src/assets/images/ve-nong-thao/image-6.png" alt="Image 6">
+          </div>
+          <h1 class="font-dancing text-5xl mt-8">Tinh hoa từ thiên thiên cho cơ thể khỏe mạnh.</h1>
+          <div
+            class="max-w-[179px] brightness-180 w-full mt-8 bg-ct-secondary border-2 border-solid border-ct-secondary">
+          </div>
+        </div>
+      </div>
+
+      <div class="xs:mt-[60px] my-10 flex flex-col items-center">
+        <div class="flex items-center">
+          <img class="xs:w-[42px] xs:h-[26.03px] w-[28px] h-[16px] mr-[6px] flex-shrink-0"
+            src="/src/assets/images/ve-nong-thao/image-3.png" alt="Image 3">
+          <h2 class="xs:text-2xl text-lg font-bold uppercase">Tin tức & sự kiện</h2>
+        </div>
+
+        <div class="overflow-x-auto w-full">
+          <div class="xs:mt-[34px] xs:py-0 py-6 w-max xs:w-auto grid grid-cols-3 xs:gap-[30px] gap-5">
+
+            <div
+              class="flex flex-col justify-between shadow-custom h-max max-w-[290px] xs:max-w-max border border-[#F0F0F0]">
+              <div class="">
+                <img class="img-cover" src="/src/assets/images/ve-nong-thao/image-8.png" alt="Image 8">
+              </div>
+              <div class="h-[215px]">
+                <div class="flex flex-col justify-between h-full xs:px-5 px-3 pt-[14px] pb-[17px]">
+                  <span class="text-xs text-[#C4C4C4] hover:text-ct-secondary">NÔNG NGHIỆP SÁCH</span>
+                  <h4 class="xs:text-lg text-base text-ct-heading-color hover:text-ct-primary font-bold">Nông Thảo đã
+                    trồng và thu
+                    hoạch vườn cà chua như thế nào?</h4>
+                  <p class="text-base text-[#000000BD] xs:line-clamp-none line-clamp-2">Mời bạn đọc tìm hiểu thêm về quy
+                    trình trồng và thu hoạch cà
+                    chua
+                    hữu cơ của...</p>
+                  <hr>
+                  <div class="flex justify-between">
+                    <div class="flex items-center w-1/2">
+                      <a href="#" class=" no-underline text-base text-ct-text-color hover:text-ct-primary">XEM CHI
+                        TIẾT</a>
+                      <div class="w-4 h-4 flex justify-center items-center">
+                        <img src="src/assets/icons/see-all-arrow.svg" alt="">
                       </div>
                     </div>
-                    <div class="flex gap-3 my-3">
-                      <img class="flex-shrink-0 size-5 grid place-content-center" src="/src/assets/icons/phone.svg" alt="">
-                      <div class="">0969.71.6848</div>
-                    </div>
-                    <div class="flex gap-3">
-                      <img class="flex-shrink-0 size-5 grid place-content-center" src="/src/assets/icons/plane-email.svg"
-                        alt="">
-                      <div class="">hotro@nongthao.vn</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="leading-6 text-sm flex-shrink-0">
-                  <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">thông tin
-                  </div>
-                  <ul class="list-disc pl-4 space-y-[10px] mt-2">
-                    <li>
-                      <a class="hover:text-ct-secondary" href="">Giới thiệu Nông Thảo</a>
-                    </li>
-                    <li>
-                      <a class="hover:text-ct-secondary" href="">Điều khoản</a>
-                    </li>
-                    <li>
-                      <a class="hover:text-ct-secondary" href="">Chính sách bảo mật</a>
-                    </li>
-                    <li>
-                      <a class="hover:text-ct-secondary" href="">Hướng dẫn mua hàng</a>
-                    </li>
-                    <li>
-                      <a class="hover:text-ct-secondary" href="">Trả hàng & hoàn tiền</a>
-                    </li>
-                    <li>
-                      <a class="hover:text-ct-secondary" href="">Nông Thảo Blogs</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="leading-6 text-sm">
-                  <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">Đăng ký
-                    nhận tin</div>
-                  <div class="mt-2">
-                    <div class="max-w-[270px]">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông Thảo</div>
-                    <div class="flex mt-3 w-full">
-                      <input class="pl-3 pr-1 placeholder:text-ct-primary flex-1 text-ct-text-color outline-none" type="text"
-                        placeholder="Email của bạn...">
-                      <div class="w-12 h-12 bg-ct-secondary grid place-content-center cursor-pointer">
-                        <img src="/src/assets/icons/plane-email.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="flex mt-7 items-center justify-between">
-                      <div class="w-[130px] h-[40px]">
-                        <img class="img-cover" src="/src/assets/images/footer/chung-nhan.png" alt="">
-                      </div>
-                      <div class="w-[83px] h-[40px]">
-                        <img src="/src/assets/images/footer/dmca.png" alt="">
-                      </div>
+                    <div class="flex items-center w-1/6 justify-around">
+                      <img src="src/assets/icons/eye.svg" alt="">
+                      <span>2.648</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="h-10 bg-[#86A76A] text-sm text-[#CFDCC3] grid place-content-center">© 2024 - Bản quyền thuộc về Công
-              ty TNHH Nông Thảo</div>
-        </footer>
+
+            <div class="flex flex-col justify-between shadow-custom h-max max-w-[290px] xs:max-w-max">
+              <div class="w-full">
+                <img class="img-cover" src="/src/assets/images/ve-nong-thao/image-8.png" alt="Image 8">
+              </div>
+              <div class="h-[215px]">
+                <div class="flex flex-col justify-between h-full xs:px-5 px-3 pt-[14px] pb-[17px]">
+                  <span class="text-xs text-[#C4C4C4] hover:text-ct-secondary">NÔNG NGHIỆP SÁCH</span>
+                  <h4 class="text-lg text-ct-heading-color hover:text-ct-primary font-bold">Nông Thảo đã trồng và thu
+                    hoạch vườn cà chua như thế nào?</h4>
+                  <p class="text-base text-[#000000BD]">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà
+                    chua
+                    hữu cơ của...</p>
+                  <hr>
+                  <div class="flex justify-between">
+                    <div class="flex items-center w-1/2">
+                      <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI
+                        TIẾT</a>
+                      <div class="w-4 h-4 flex justify-center items-center">
+                        <img src="src/assets/icons/see-all-arrow.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="flex items-center w-1/6 justify-around">
+                      <img src="src/assets/icons/eye.svg" alt="">
+                      <span>2.648</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-between shadow-custom h-max max-w-[290px] xs:max-w-max">
+              <div class="w-full">
+                <img class="img-cover" src="/src/assets/images/ve-nong-thao/image-8.png" alt="Image 8">
+              </div>
+              <div class="h-[215px]">
+                <div class="flex flex-col justify-between h-full xs:px-5 px-3 pt-[14px] pb-[17px]">
+                  <span class="text-xs text-[#C4C4C4] hover:text-ct-secondary">NÔNG NGHIỆP SÁCH</span>
+                  <h4 class="text-lg text-ct-heading-color hover:text-ct-primary font-bold">Nông Thảo đã trồng và thu
+                    hoạch vườn cà chua như thế nào?</h4>
+                  <p class="text-base text-[#000000BD]">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà
+                    chua
+                    hữu cơ của...</p>
+                  <hr>
+                  <div class="flex justify-between">
+                    <div class="flex items-center w-1/2">
+                      <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI
+                        TIẾT</a>
+                      <div class="w-4 h-4 flex justify-center items-center">
+                        <img src="src/assets/icons/see-all-arrow.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="flex items-center w-1/6 justify-around">
+                      <img src="src/assets/icons/eye.svg" alt="">
+                      <span>2.648</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="space-x-4 pt-6 flex justify-center">
+          <div class="size-[10px] bg-ct-secondary border border-[#a1a1a1] rounded-full"></div>
+          <div class="size-[10px] border border-[#a1a1a1] rounded-full"></div>
+          <div class="size-[10px] border border-[#a1a1a1] rounded-full"></div>
+        </div>
+        <div class="pb-2 w-max border-b border-ct-primary mx-auto mt-7 xs:block hidden">
+          <a href="" class="w-40 h-11 border border-ct-primary grid place-content-center text-ct-primary">
+            Xem tất cả
+          </a>
+        </div>
+      </div>
+
     </div>
+    <footer class="w-full">
+      <div class="grid max-h-[500px] overflow-hidden xs:grid-cols-8 grid-cols-3 w-full *:w-full">
+        <img src="/src/assets/images/footer/nong-trai.png" alt="">
+        <img src="/src/assets/images/footer/dau-tay.png" alt="">
+        <img src="/src/assets/images/footer/thu-hoach-dau-tay.png" alt="">
+        <img class="hidden xs:block" src="/src/assets/images/footer/thu-hoach.png" alt="">
+        <img class="hidden xs:block" src="/src/assets/images/footer/1-qua-ca-chua.png" alt="">
+        <img class="hidden xs:block" src="/src/assets/images/footer/nong-trai.png" alt="">
+        <img class="hidden xs:block" src="/src/assets/images/footer/thu-hoach.png" alt="">
+        <img class="hidden xs:block" src="/src/assets/images/footer/dau-tay.png" alt="">
+      </div>
+      <div class="bg-ct-primary py-10">
+        <div class="wrapper flex flex-col xs:flex-row gap-y-5 justify-between gap-x-12 text-[#D7E2CD]">
+          <div class="text-sm text-[#FFFFFFCC]">
+            <div class="brightness-150 w-[262px] h-[78px] mb-6 *:size-full *:object-cover">
+              <img src="/src/assets/icons/logo-footer.svg" alt="">
+            </div>
+            <div class="">
+              MST: 012345678910 - Ngày cấp: 10/02/2022
+            </div>
+            <div class="">
+              Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội
+            </div>
+            <div class="flex items-center gap-4 mt-5">
+              <div class="text-nowrap">Liên kết</div>
+              <div class="flex items-center gap-[10px] *:block *:size-[26px] *:rounded-full *:overflow-hidden">
+                <a href="">
+                  <img src="/src/assets/images/footer/shopper.png" alt="">
+                </a>
+                <a href="">
+                  <img src="/src/assets/images/footer/tiki.png" alt="">
+                </a>
+                <a href="">
+                  <img src="/src/assets/images/footer/lazada.png" alt="">
+                </a>
+                <a href="">
+                  <img src="/src/assets/images/footer/facebook.png" alt="">
+                </a>
+                <a href="">
+                  <img src="/src/assets/images/footer/in.png" alt="">
+                </a>
+                <a href="">
+                  <img src="/src/assets/images/footer/tiktok.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="leading-6 text-sm">
+            <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">Liên hệ
+            </div>
+            <div class="mt-2">
+              <div class="flex gap-3">
+                <img class="flex-shrink-0 size-5 grid place-content-center" src="/src/assets/icons/map-location.svg"
+                  alt="">
+                <div class="max-w-[248px]">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, P.Ngọc Khánh, Q.Ba
+                  Đình, Hà Nội
+                </div>
+              </div>
+              <div class="flex gap-3 my-3">
+                <img class="flex-shrink-0 size-5 grid place-content-center" src="/src/assets/icons/phone.svg" alt="">
+                <div class="">0969.71.6848</div>
+              </div>
+              <div class="flex gap-3">
+                <img class="flex-shrink-0 size-5 grid place-content-center" src="/src/assets/icons/plane-email.svg"
+                  alt="">
+                <div class="">hotro@nongthao.vn</div>
+              </div>
+            </div>
+          </div>
+          <div class="leading-6 text-sm flex-shrink-0">
+            <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">thông tin
+            </div>
+            <ul class="list-disc pl-4 space-y-[10px] mt-2">
+              <li>
+                <a class="hover:text-ct-secondary" href="">Giới thiệu Nông Thảo</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Điều khoản</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Chính sách bảo mật</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Hướng dẫn mua hàng</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Trả hàng & hoàn tiền</a>
+              </li>
+              <li>
+                <a class="hover:text-ct-secondary" href="">Nông Thảo Blogs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="leading-6 text-sm">
+            <div class="font-bold uppercase text-white py-4 border-t-[0.5px] xs:border-0 border-[#EBF0FFB2]">Đăng ký
+              nhận tin</div>
+            <div class="mt-2">
+              <div class="max-w-[270px]">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông Thảo</div>
+              <div class="flex mt-3 w-full">
+                <input class="pl-3 pr-1 placeholder:text-ct-primary flex-1 text-ct-text-color outline-none" type="text"
+                  placeholder="Email của bạn...">
+                <div class="w-12 h-12 bg-ct-secondary grid place-content-center cursor-pointer">
+                  <img src="/src/assets/icons/plane-email.svg" alt="">
+                </div>
+              </div>
+              <div class="flex mt-7 items-center justify-between">
+                <div class="w-[130px] h-[40px]">
+                  <img class="img-cover" src="/src/assets/images/footer/chung-nhan.png" alt="">
+                </div>
+                <div class="w-[83px] h-[40px]">
+                  <img src="/src/assets/images/footer/dmca.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-10 bg-[#86A76A] text-sm text-[#CFDCC3] grid place-content-center">© 2024 - Bản quyền thuộc về Công
+        ty TNHH Nông Thảo</div>
+    </footer>
+  </div>
 </body>
+
 </html>
