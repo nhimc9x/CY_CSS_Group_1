@@ -19,6 +19,9 @@ module.exports = {
       },
       screens: {
         'xs': '475px',
+      },
+      borderWidth: {
+        '5': '5px', 
       }
     },
   },
