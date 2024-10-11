@@ -135,59 +135,102 @@
               </div>
             </div>
         </header>
-        <div class="max-w-[1920px] pt-20 mx-auto h-[335px] bg-red-500 bg-[url('../assets/images/lien-he.png')] bg-no-repeat bg-cover bg-center flex justify-center items-center">
-            <p class="text-white text-4xl">LIÊN HỆ VỚI NÔNG THẢO</p>
-        </div>
-        <div class="wrapper">
-            <div class="mt-[22.5px] flex items-center">
-                <a href="#" class="text-sm no-underline">Trang chủ</a>
-                <svg class="mx-[10px]" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.98855 5.49987L1.14125 0.652579L-3.73949e-07 1.79222L3.71008 5.49987L-4.98504e-08 9.20672L1.14045 10.3472L5.98855 5.49987Z" fill="#666666"/>
-                </svg>
-                <a href="#" class="text-[#C4C4C4] no-underline">Về Nông Thảo</a>
-            </div>
-            <div class="flex my-[108px]">
-                <div class="max-w-[427px] xl:mr-[71px]">
-                    <form>
-                        <div class="border-b border-gray-900/10 h-[632px] flex flex-col justify-between">
-                            <p class="text-base">
-                                Vui lòng để lại lời nhắn cho Nông Thảo. Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất. Trong trường hợp cần hỗ trợ nhanh, hãy gọi: <span class="text-red-700 font-bold">0969.71.6848</span>
-                            </p>
-                            <div class="flex flex-col relative ">
-								<label for="name" class="absolute top-[-0.5rem] left-[12px] bg-white">
-                                    <span class="text-[#00000080] py-[3px] pl-[9px] pr-[3px]">Họ và tên *</span>
-                                </label>
-                                <input type="text" id="name" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nguyễn Trần Thị Khánh Ly" required>
-                            </div>
-                            <div class="flex flex-col relative">
-                                <label for="phone" class="text-sm absolute top-[-0.5rem] left-[12px] bg-white">
-                                    <span class="text-[#00000080] py-[3px] pl-[9px] pr-[3px]">Số điện thoại *</span>
-                                </label>
-                                <input type="number" id="phone" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="19001000" required>
-                            </div>
-                            <div class="flex flex-col relative">
-                                <label for="mail" class="text-sm absolute top-[-0.5rem] left-[12px] bg-white">
-                                    <span class="text-[#00000080] py-[3px] pl-[9px] pr-[3px]">Email *</span>
-                                </label>
-                                <input type="email" id="mail" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="vikhanhtq@gmail.com" required>
-                            </div>
-                            <div class="flex flex-col relative">
-                                <label for="about" class="text-sm absolute top-[-0.5rem] left-[12px] bg-white">
-                                    <span class="text-[#00000080] py-[3px] pl-[9px] pr-[3px]">Lời nhắn</span>
-                                </label>
-                                <textarea id="about" name="about" rows="5" class="block w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tôi cần hỗ trợ đặt hàng số lượng lớn"></textarea>
-                            </div>
-                            <button type="button" class="bg-[#E10000] w-full rounded h-[71px] text-yellow-50">GỬI NGAY</button>
+        <div class="wrapper my-[50px] xs:my-20">
+            <div class="pt-[37px] flex xs:flex-row justify-between flex-col">
+                <div class="flex flex-col gap-y-5 xs:w-7/12 w-full items-center pt-[33px]">
+                    <div class="w-14 h-[64px] relative">
+                        <img src="/src/assets/icons/order_success.svg" alt="" class="w-full h-full">
+                        <div class="w-6 h-6 absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <img src="/src/assets/icons/tick-sucess.svg" alt="" class="w-full h-full">
                         </div>
-                    </form>
+                    </div>
+                    <h2 class="text-2xl font-bold text-ct-cta-color">ĐẶT HÀNG THÀNH CÔNG</h2>
+                    <p class="text-center">
+                        Cảm ơn <span class="text-ct-primary font-bold">Anh/Chị</span> đã ủng hộ, <span class="text-ct-primary font-bold">Nông Thảo</span> sẽ nhanh chóng gửi hàng. Anh/ Chị vui lòng để ý điện thoại trong vài ngày tới để nhận hàng thuận lợi.
+                    </p>
+                    <p class="text-center">Trong mọi trường hợp cần hỗ trợ nhanh chóng. Hãy gọi <span class="text-ct-cta-color font-bold">0969.71.6848</span></p>
+                    <div class="p-[30px]">
+                        <button type="button" class="bg-ct-cta-color rounded text-white h-[51px] w-[269px] text-lg font-bold">ĐẶT HÀNG NGAY</button>
+                    </div>
                 </div>
-                <div class="max-w-[670px] w-full">
-                    <iframe
-                    class="w-full h-full rounded-lg"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.451947109587!2d106.7009823152601!3d10.776889992319464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef6471f8f8b%3A0xa7d5f367b1a8a1b0!2sBen%20Thanh%20Market!5e0!3m2!1sen!2s!4v1633071943081!5m2!1sen!2s"
-                    allowfullscreen=""
-                    loading="lazy">
-                    </iframe>
+                <div class="max-w-[369px] w-full flex flex-col xs:gap-y-4 xs:mt-0 mt-[30px] gap-y-[37px]">
+                    <div class="bg-[#FFFAFA] xs:h-[217px] h-[197px] flex flex-col justify-between">
+                        <div class="text-lg font-bold px-[25px] pt-[20px] ">Tóm tắt đơn hàng</div>
+                        <hr>
+                        <div class="h-24 flex flex-col justify-between px-[25px] pb-[20px] ">
+                            <div class="flex justify-between">
+                                <span class="text-base text-[#000000BD]">02 sản phẩm</span>
+                                <span class="text-base font-medium text-ct-cta-color">600.0000 <u>đ</u></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-base text-[#000000BD]">Phí ship</span>
+                                <span class="text-base font-medium text-ct-cta-color">35.000 <u>đ</u></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-base text-[#000000BD] font-bold">TỔNG</span>
+                                <span class="text-base font-bold text-ct-cta-color">635.000 <u>đ</u></span>
+                            </div>
+                        </div>
+                        <small class="text-xs italic pl-[25px]">(Đã bao gồm thuế VAT)</small>
+                    </div>
+                    <div class=" bg-[#FAFAFA] gap-y-4 flex flex-col">
+                        <div class="text-lg font-bold px-[25px] pt-[20px] ">Tóm tắt đơn hàng</div>
+                        <hr>
+                        <div class="grid grid-cols-[2fr_6fr_1fr] gap-y-4 gap-x-3 px-[25px] pb-[20px] ">
+                            <div class="col-span-1">
+                                <img src="/src/assets/images/nongthao/cam.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="flex flex-col justify-between">
+                                <p class="text-sm text-[#343434]">
+                                    Mứt chanh tây sấy lạnh 100% hữu cơ (Sản phẩm cao cấp)
+                                </p>
+                                <span class="text-xs text-ct-text-color">Loại: 250g</span>
+                            </div>
+                            <div class="flex justify-end">
+                                <span class="text-sm text-ct-cta-color">x1</span>
+                            </div>
+                            <div class="col-span-1">
+                                <img src="/src/assets/images/nongthao/cam.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="flex flex-col justify-between">
+                                <p class="text-sm text-[#343434]">
+                                    Mứt chanh tây sấy lạnh 100% hữu cơ (Sản phẩm cao cấp)
+                                </p>
+                                <span class="text-xs text-ct-text-color">Loại: 250g</span>
+                            </div>
+                            <div class="flex justify-end">
+                                <span class="text-sm text-ct-cta-color">x1</span>
+                            </div>
+                            <div class="col-span-1">
+                                <img src="/src/assets/images/nongthao/cam.png" alt="" class="w-full h-full">
+                            </div>
+                            <div class="flex flex-col justify-between">
+                                <p class="text-sm text-[#343434]">
+                                    Mứt chanh tây sấy lạnh 100% hữu cơ (Sản phẩm cao cấp)
+                                </p>
+                                <span class="text-xs text-ct-text-color">Loại: 250g</span>
+                            </div>
+                            <div class="flex justify-end">
+                                <span class="text-sm text-ct-cta-color">x1</span>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="bg-[#FAFAFA] gap-y-4 flex flex-col">
+                        <div class="text-lg font-bold px-[25px] pt-[20px]">Địa chỉ giao hàng</div>
+                        <hr>
+                        <div class="flex flex-col gap-y-3 px-[25px] pb-[20px]">
+                            <div class="w-[236px] h-[30px] flex justify-between">
+                                <div class="text-[#343434]">Vi Ngọc Khánh</div>
+                                <label for="phone" class="w-[116px] bg-ct-cta-color text-white flex justify-center items-center">0988818841</label>
+                            </div>
+                            <p class="text-[#343434]">Số 10, 63/75 Lê Đức Thọ, Mỹ Đình 2, Nam Từ Liêm, Hà Nội</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#FAFAFA] gap-y-4 flex flex-col">
+                        <div class="text-lg font-bold px-[25px] pt-[20px]">Phương thức giao hàng</div>
+                        <hr>
+                        <p class="text-[#343434] text-base px-[25px] pb-[20px]">Thanh toán khi giao hàng (Từ 3-7 ngày)</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -313,4 +356,4 @@
         </footer>
     </div>
 </body>
-</html>     
+</html>
