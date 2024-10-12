@@ -584,6 +584,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-10{
+  bottom: 2.5rem;
+}
+
 .left-0{
   left: 0px;
 }
@@ -598,6 +602,10 @@ video {
 
 .right-0{
   right: 0px;
+}
+
+.right-4{
+  right: 1rem;
 }
 
 .top-0{
@@ -937,6 +945,11 @@ video {
   display: none;
 }
 
+.size-12{
+  width: 3rem;
+  height: 3rem;
+}
+
 .size-4{
   width: 1rem;
   height: 1rem;
@@ -1189,10 +1202,6 @@ video {
   height: 78px;
 }
 
-.h-\[794px\]{
-  height: 794px;
-}
-
 .h-\[9\.6px\]{
   height: 9.6px;
 }
@@ -1348,10 +1357,6 @@ video {
 
 .w-\[269px\]{
   width: 269px;
-}
-
-.w-\[270px\]{
-  width: 270px;
 }
 
 .w-\[27px\]{
@@ -1546,6 +1551,27 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+.animate-pulse{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1714,10 +1740,6 @@ video {
 
 .gap-\[29px\]{
   gap: 29px;
-}
-
-.gap-\[30px\]{
-  gap: 30px;
 }
 
 .gap-x-1{
@@ -2174,6 +2196,14 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-ct-cta-color\/20{
+  background-color: rgb(225 0 0 / 0.2);
+}
+
+.bg-ct-secondary\/30{
+  background-color: rgb(104 193 20 / 0.3);
 }
 
 .bg-\[url\(\'\.\.\/assets\/images\/header\/background-404\.png\'\)\]{
@@ -3646,5 +3676,9 @@ html {
 @media (min-width: 1280px){
   .xl\:mr-\[110px\]{
     margin-right: 110px;
+  }
+
+  .xl\:gap-\[30px\]{
+    gap: 30px;
   }
 }
