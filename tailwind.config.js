@@ -4,10 +4,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#356C07'
+        'ct-primary': '#356C07',
+        'ct-secondary': '#68C114',
+        'ct-cta-color': '#E10000',
+        'ct-heading-color': '#1A1A1A',
+        'ct-text-color': '#4F4F4F',
+        'ct-sub-text-color': '#4F4F4F99',
+        'ct-border-color': '#0000004D',
       },
+      fontFamily: {
+        'dancing': ['"Dancing Script"', 'cursive'],
+      },
+      boxShadow: {
+        'custom': '0px 0px 34px 0px #0000001A',
+      },
+      screens: {
+        'xs': '475px',
+      },
+      borderWidth: {
+        '5': '5px', 
+      }
     },
   },
   plugins: [],
 }
-
