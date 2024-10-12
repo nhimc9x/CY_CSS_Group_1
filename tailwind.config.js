@@ -10,6 +10,7 @@ module.exports = {
         'ct-heading-color': '#1A1A1A',
         'ct-text-color': '#4F4F4F',
         'ct-sub-text-color': '#4F4F4F99',
+        'ct-border-color': '#0000004D',
       },
       fontFamily: {
         'dancing': ['"Dancing Script"', 'cursive'],
