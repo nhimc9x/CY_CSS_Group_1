@@ -138,7 +138,7 @@
       </div>
     </header>
 
-    <div class="wrapper mt-[50px] xs:mt-20 h-[900px]">
+    <div class="wrapper mt-[50px] xs:mt-20">
       <div class="flex items-center text-[#4F4F4F] text-sm gap-2 py-5 font-semibold">
         <a href="">
           Trang chủ
@@ -153,7 +153,7 @@
         </a>
       </div>
 
-      <div class="flex gap-x-11">
+      <div class="flex gap-x-11 xs:flex-row flex-col gap-y-4">
         <div class="max-w-[470px]">
           <div>
             <img class="img-cover" src="../../../assets/images/video1.svg" alt="">
@@ -174,10 +174,10 @@
         </div>
 
         <div class="flex-1 space-y-5">
-          <div class="text-ct-heading-color font-semibold text-[1.75rem]">Mứt chanh tây sấy lạnh 100% hữu cơ</div>
+          <div class="text-ct-heading-color font-semibold xs:text-[1.75rem] text-lg">Mứt chanh tây sấy lạnh 100% hữu cơ</div>
           <div class="bg-[#fafafa] p-4 space-y-2">
             <div class="text-[#C4C4C4] line-through">300.000 ₫</div>
-            <div class="flex items-center gap-x-14">
+            <div class="flex items-center xs:gap-x-14 xs:justify-start justify-between">
               <div class="text-2xl font-bold text-ct-cta-color">250.000 ₫</div>
               <div class="text-sm text-white bg-ct-cta-color py-0.5 px-1 rounded font-bold">GIẢM 20%</div>
             </div>
@@ -189,13 +189,22 @@
           </div>
           <div class="flex items-center gap-3">
             <div>Loại (g): </div>
-            <button class="bg-ct-primary w-[45px] h-[42px] grid place-content-center text-white">150</button>
-            <button class="bg-[#f6f6f6] w-[45px] h-[42px] grid place-content-center text-ct-text-color">250</button>
-            <button class="bg-[#f6f6f6] w-[45px] h-[42px] grid place-content-center text-ct-text-color">500</button>
+            <label class="xs:ml-0 ml-auto bg-[#F6F6F6] text-ct-text-color w-[45px] h-[42px] grid place-content-center has-[:checked]:bg-ct-primary has-[:checked]:text-white" for="150">
+              150
+              <input hidden type="radio" name="type_kilo" id="150">
+            </label>
+            <label class="bg-[#F6F6F6] text-ct-text-color w-[45px] h-[42px] grid place-content-center has-[:checked]:bg-ct-primary has-[:checked]:text-white" for="250">
+              250
+              <input hidden type="radio" name="type_kilo" id="250">
+            </label>
+            <label class="bg-[#F6F6F6] text-ct-text-color w-[45px] h-[42px] grid place-content-center has-[:checked]:bg-ct-primary has-[:checked]:text-white" for="500">
+              500
+              <input hidden type="radio" name="type_kilo" id="500">
+            </label>
           </div>
-          <div class="text-[#5A5A5A] flex items-center gap-x-9">
+          <div class="text-[#5A5A5A] flex items-center gap-x-9 gap-y-4 flex-wrap">
             <div>Số lượng:</div>
-            <div class="flex items-center h-9">
+            <div class="flex items-center h-9 xs:ml-0 ml-auto">
               <div
                 class="h-full w-10 border-[0.8px] border-[#EBEBEB] text-2xl grid place-content-center cursor-pointer">-
               </div>
@@ -204,15 +213,16 @@
                 class="h-full w-10 border-[0.8px] border-[#EBEBEB] text-2xl grid place-content-center cursor-pointer">+
               </div>
             </div>
-            <div>4352 sản phẩm có sẵn</div>
+            <div class="xs:ml-0 ml-auto">4352 sản phẩm có sẵn</div>
           </div>
           <div class="flex h-[46px] *:uppercase *:text-sm *:font-bold gap-x-4">
-            <button class="flex gap-[10px] px-3 w-max h-full items-center border border-ct-primary text-ct-primary">
+            <button class="hidden xs:flex gap-[10px] px-3 w-max h-full items-center border border-ct-primary text-ct-primary">
               <img src="../../../assets/icons/chat-now.svg" alt="">
               <div>chat ngay</div>
             </button>
-            <div class="grid grid-cols-2 gap-4 flex-1 max-w-[424px] *:uppercase *:text-sm *:font-bold">
-              <button class="flex gap-[10px] h-full justify-center items-center border border-ct-cta-color text-ct-cta-color">
+            <div class="grid grid-cols-2 gap-4 flex-1 max-w-[424px] xs:*:uppercase *:text-sm xs:*:font-bold *:font-normal">
+              <button
+                class="flex gap-[10px] h-full justify-center items-center border border-ct-cta-color text-ct-cta-color">
                 <img src="../../../assets/icons/red-add-to-cart.svg" alt="">
                 <div>Thêm vào giỏ hàng</div>
               </button>
@@ -222,7 +232,7 @@
             </div>
           </div>
           <div class="h-[0.5px] bg-[#F0F0F0]"></div>
-          <div class="flex gap-3 items-center pt-4">
+          <div class="flex gap-3 items-center xs:pt-4 pt-1">
             <div class="text-ct-text-color flex-shrink-0">Chia sẻ:</div>
             <a href="">
               <img class="xs:size-[30px] size-[24px]" src="../../../assets/images/chiase/tw.png" alt="">
@@ -239,6 +249,238 @@
           </div>
         </div>
 
+      </div>
+
+      <div class="xs:my-10 my-5 max-w-[650px] mx-auto">
+        <div class="w-full xs:text-lg text-base font-bold text-[#333333] uppercase border-b border-ct-primary">
+          <div class="border-b-4 border-ct-primary w-max mx-auto py-2">chi tiết sản phẩm</div>
+        </div>
+
+        <div class="xs:py-10 py-5 border-b border-ct-primary font-light text-ct-text-color space-y-4">
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui. officia deserunt mollit anim id est
+            laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem
+          </p>
+          <div class="w-full py-4">
+            <img class="img-cover" src="/src/assets/images/blog-1.png" alt="">
+          </div>
+          <h5 class="font-semibold text-2xl">Sản phẩm từ nông trại hữu cơ</h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui. officia deserunt mollit anim id est
+            laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem
+          </p>
+          <div class="w-full py-4">
+            <img class="img-cover" src="/src/assets/images/blog-2.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="xs:mb-14 mb-5">
+        <div class="flex items-center">
+          <img class="xs:w-[42px] xs:h-[26.03px] w-[28px] h-[16px] mr-[6px] flex-shrink-0"
+            src="/src/assets/images/ve-nong-thao/image-3.png" alt="Image 3">
+          <h2 class="xs:text-2xl text-lg font-bold uppercase">Sản phẩm liên quan</h2>
+        </div>
+        <div class="grid mt-5 xs:grid-cols-4 grid-cols-2 gap-7">
+          <div class="flex bg-white flex-col group border border-[#f0f0f0] hover:shadow-md duration-300 ease-in-out">
+            <div class="h-40 xs:h-[268px] relative">
+              <div
+                class="flag-sale pb-1 w-[51px] h-[54px] bg-ct-cta-color absolute top-0 right-0 grid place-content-center text-lg font-bold text-white">
+                50%</div>
+              <img class="w-full h-full object-cover" src="../../../assets/images/nongthao/cam.png" alt="product">
+              <a href=""
+                class="h-10 absolute bottom-0 left-0 right-0 bg-ct-cta-color/90 uppercase text-white grid place-content-center translate-y-2 opacity-0 duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 transition-all">
+                Mua ngay
+              </a>
+            </div>
+            <div class="relative z-[1] bg-white">
+              <div
+                class="text-sm font-medium group-hover:text-ct-secondary text-ct-text-color m-2 mb-0 pb-2 border-b border-[#f0f0f0]">
+                Thảo dược Cao cà gai leo Yên
+                Thủy - 250g
+              </div>
+              <div class="p-2 flex items-center xs:mt-2 mt-0">
+                <div class="flex flex-col xs:flex-row items-center justify-between">
+                  <div class="text-xs font-bold text-ct-cta-color">250.000 đ</div>
+                  <div class="text-[10px] text-[#D9D9D9] line-through ml-0 xs:ml-3">300.000 đ</div>
+                </div>
+                <img class="cursor-pointer ml-auto" src="../../../assets/icons/add-to-cart.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="flex bg-white flex-col group border border-[#f0f0f0] hover:shadow-md duration-300 ease-in-out">
+            <div class="h-40 xs:h-[268px] relative">
+              <div
+                class="flag-sale pb-1 w-[51px] h-[54px] bg-ct-cta-color absolute top-0 right-0 grid place-content-center text-lg font-bold text-white">
+                50%</div>
+              <img class="w-full h-full object-cover" src="../../../assets/images/nongthao/cam.png" alt="product">
+              <a href=""
+                class="h-10 absolute bottom-0 left-0 right-0 bg-ct-cta-color/90 uppercase text-white grid place-content-center translate-y-2 opacity-0 duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 transition-all">
+                Mua ngay
+              </a>
+            </div>
+            <div class="relative z-[1] bg-white">
+              <div
+                class="text-sm font-medium group-hover:text-ct-secondary text-ct-text-color m-2 mb-0 pb-2 border-b border-[#f0f0f0]">
+                Thảo dược Cao cà gai leo Yên
+                Thủy - 250g
+              </div>
+              <div class="p-2 flex items-center xs:mt-2 mt-0">
+                <div class="flex flex-col xs:flex-row items-center justify-between">
+                  <div class="text-xs font-bold text-ct-cta-color">250.000 đ</div>
+                  <div class="text-[10px] text-[#D9D9D9] line-through ml-0 xs:ml-3">300.000 đ</div>
+                </div>
+                <img class="cursor-pointer ml-auto" src="../../../assets/icons/add-to-cart.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="flex bg-white flex-col group border border-[#f0f0f0] hover:shadow-md duration-300 ease-in-out">
+            <div class="h-40 xs:h-[268px] relative">
+              <div
+                class="flag-sale pb-1 w-[51px] h-[54px] bg-ct-cta-color absolute top-0 right-0 grid place-content-center text-lg font-bold text-white">
+                50%</div>
+              <img class="w-full h-full object-cover" src="../../../assets/images/nongthao/cam.png" alt="product">
+              <a href=""
+                class="h-10 absolute bottom-0 left-0 right-0 bg-ct-cta-color/90 uppercase text-white grid place-content-center translate-y-2 opacity-0 duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 transition-all">
+                Mua ngay
+              </a>
+            </div>
+            <div class="relative z-[1] bg-white">
+              <div
+                class="text-sm font-medium group-hover:text-ct-secondary text-ct-text-color m-2 mb-0 pb-2 border-b border-[#f0f0f0]">
+                Thảo dược Cao cà gai leo Yên
+                Thủy - 250g
+              </div>
+              <div class="p-2 flex items-center xs:mt-2 mt-0">
+                <div class="flex flex-col xs:flex-row items-center justify-between">
+                  <div class="text-xs font-bold text-ct-cta-color">250.000 đ</div>
+                  <div class="text-[10px] text-[#D9D9D9] line-through ml-0 xs:ml-3">300.000 đ</div>
+                </div>
+                <img class="cursor-pointer ml-auto" src="../../../assets/icons/add-to-cart.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="flex bg-white flex-col group border border-[#f0f0f0] hover:shadow-md duration-300 ease-in-out">
+            <div class="h-40 xs:h-[268px] relative">
+              <div
+                class="flag-sale pb-1 w-[51px] h-[54px] bg-ct-cta-color absolute top-0 right-0 grid place-content-center text-lg font-bold text-white">
+                50%</div>
+              <img class="w-full h-full object-cover" src="../../../assets/images/nongthao/cam.png" alt="product">
+              <a href=""
+                class="h-10 absolute bottom-0 left-0 right-0 bg-ct-cta-color/90 uppercase text-white grid place-content-center translate-y-2 opacity-0 duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 transition-all">
+                Mua ngay
+              </a>
+            </div>
+            <div class="relative z-[1] bg-white">
+              <div
+                class="text-sm font-medium group-hover:text-ct-secondary text-ct-text-color m-2 mb-0 pb-2 border-b border-[#f0f0f0]">
+                Thảo dược Cao cà gai leo Yên
+                Thủy - 250g
+              </div>
+              <div class="p-2 flex items-center xs:mt-2 mt-0">
+                <div class="flex flex-col xs:flex-row items-center justify-between">
+                  <div class="text-xs font-bold text-ct-cta-color">250.000 đ</div>
+                  <div class="text-[10px] text-[#D9D9D9] line-through ml-0 xs:ml-3">300.000 đ</div>
+                </div>
+                <img class="cursor-pointer ml-auto" src="../../../assets/icons/add-to-cart.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full bg-[#FAFAFA]">
+      <div class="wrapper">
+        <div class="flex xs:py-14 py-6 flex-col xs:flex-row">
+          <div class="max-w-[531px] order-1 xs:order-none rounded-sm xs:mr-[73px]">
+            <img src="/src/assets/images/ve-nong-thao/image-2.png" alt="Image 2">
+          </div>
+          <div class="max-w-[573px] flex flex-col justify-between xs:mb-0 mb-7">
+            <div class="flex items-center">
+              <img class="xs:w-[42px] xs:h-[26.03px] w-[22px] h-[12px] xs:mr-[6px] mr-2 flex-shrink-0"
+                src="/src/assets/images/ve-nong-thao/image-3.png" alt="Image 3">
+              <h2 class="xs:text-2xl text-lg font-bold">TẠI SAO LỰA CHỌN NÔNG THẢO?</h2>
+            </div>
+            <div class="xs:my-0 my-7">
+              <p class="text-base text-center xs:text-start">Chúng tôi mang đến cho bạn các sản phẩm nông sản và thảo
+                dược được sản xuất sạch bền
+                vững
+                và không có hóa chất.</p>
+            </div>
+            <div>
+              <div class="flex">
+                <div
+                  class="relative w-[72px] h-[72px] bg-ct-primary rounded-full flex items-center justify-center mr-6">
+                  <span class="text-[32px] font-bold text-white text">01</span>
+                  <div
+                    class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2">
+                  </div>
+                </div>
+                <div class="w-3/4">
+                  <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">100% hữu cơ</span>
+                  <p class="text-base line-clamp-2">
+                    Thực hành tốt trồng trọt theo tiêu chuẩn GACP-WHO để nguyên liệu an toàn cho sức khỏe của bạn
+                  </p>
+                </div>
+              </div>
+              <div class="xs:my-2 my-1 ml-9">
+                <img class="xs:h-[50px] h-[38px]" src="/src/assets/images/ve-nong-thao/image-4.png" alt="Image 4">
+              </div>
+              <div class="flex">
+                <div
+                  class="relative w-[72px] h-[72px]  bg-ct-primary rounded-full flex items-center justify-center mr-6">
+                  <span class="text-[32px] font-bold text-white text">02</span>
+                  <div
+                    class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2">
+                  </div>
+                </div>
+                <div class="w-3/4">
+                  <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">Công nghệ</span>
+                  <p class="text-base line-clamp-2">
+                    Áp dụng công nghệ sản xuất tiêu chuẩn tùy theo loại sản phẩm. Tuân thủ phương pháp sản xuất khoa
+                    học,
+                    bền vững.
+                  </p>
+                </div>
+              </div>
+              <div class="xs:my-2 my-1 ml-9">
+                <img class="h-[50px]" src="/src/assets/images/ve-nong-thao/image-4.png" alt="Image 4">
+              </div>
+              <div class="flex">
+                <div
+                  class="relative w-[72px] h-[72px]  bg-ct-primary rounded-full flex items-center justify-center mr-6">
+                  <span class="text-[32px] font-bold text-white text">03</span>
+                  <div
+                    class="absolute w-[43px] h-[42px] rounded-full bg-[#FFFFFF3D] left-1/2 -bottom-[60%] -translate-x-1/2 -translate-y-1/2">
+                  </div>
+                </div>
+                <div class="w-3/4">
+                  <span class="text-ct-text-color hover:text-ct-primary text-[21px] font-bold">Trách nhiệm</span>
+                  <p class="text-base line-clamp-2">
+                    Nông Thảo chăm chút từng khâu sản xuất, kiểm định và phân phối để sản phẩm đến tay bạn có chất lượng
+                    tốt
+                    nhất
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
