@@ -5,68 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nông nghiệp sạch</title>
     <link rel="stylesheet" href="../../assets/output.css">
-    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/main.js" defer></script>
 </head>
 <body>
 <div class="w-full bg-[#F6F6F6]">
   <header class="h-[50px] xs:h-20 bg-white shadow-[0px_4px_13px_0px_rgba(0,0,0,0.1)] fixed top-0 left-0 right-0 z-10">
     <div class="wrapper h-full flex items-center justify-between">
-      <a href="" class="w-[138px] h-[28px] xs:w-[229px] xs:h-[44px] block flex-shrink-0 order-1 xs:order-none">
-        <img class="size-full" src="../../assets/images/nongthao.png" alt="">
+      <a href="/" class="w-[138px] h-[28px] xs:w-[229px] xs:h-[44px] block flex-shrink-0 order-1 xs:order-none">
+        <img class="size-full" src="/src/assets/images/nongthao.png" alt="">
       </a>
       <ul class="hidden xs:flex font-semibold uppercase mx-3 gap-9 text-ct-heading-color flex-shrink-0 *:py-1">
         <li class="relative group">
-          <a class="link" href="">Sản phẩm</a>
+          <a class="link" href="/src/pages/san-pham/">Sản phẩm</a>
           <div
-                  class="w-[198px] hidden group-hover:block bg-white border-[0.1px] border-gray-50 shadow px-3 absolute z-20 top-full left-1/2 -translate-x-1/2 text-sm uppercase font-semibold text-ct-heading-color *:block *:py-3 divide-y-[0.5px] divide-[#0000004D]">
-            <a class="link" href="">thảo dược</a>
+            class="w-[198px] hidden group-hover:block bg-white border-[0.1px] border-gray-50 shadow px-3 absolute z-20 top-full left-1/2 -translate-x-1/2 text-sm uppercase font-semibold text-ct-heading-color *:block *:py-3 divide-y-[0.5px] divide-[#0000004D]">
+            <a class="link" href="/src/pages/san-pham/thao-duoc/">thảo dược</a>
             <a class="link" href="">nông sản</a>
             <a class="link" href="">hoa quả hữu cơ</a>
           </div>
         </li>
         <li>
-          <a class="link text-ct-primary" href="">Về nông sản</a>
+          <a class="link text-ct-primary" href="/src/pages/ve-nong-thao/">Về nông thảo</a>
         </li>
         <li>
-          <a class="link" href="">Blog</a>
+          <a class="link" href="/src/pages/tin-tuc/">Blog</a>
         </li>
         <li>
-          <a class="link" href="">Liên hệ</a>
+          <a class="link" href="/src/pages/lien-he/">Liên hệ</a>
         </li>
       </ul>
 
       <!-- Mobile menu -->
       <div id="mobile-menu-btn" class="size-6 block xs:hidden">
-        <img class="img-cover" src="../../assets/icons/mobile-menu.svg" alt="">
+        <img class="img-cover" src="/src/assets/icons/mobile-menu.svg" alt="">
       </div>
       <div id="mobile-menu"
-           class="fixed z-30 bg-slate-200 w-[288px] top-0 -left-full bottom-0 px-4 py-7 duration-300 ease-in-out">
+        class="fixed z-30 bg-slate-200 w-[288px] top-0 -left-full bottom-0 px-4 py-7 duration-300 ease-in-out">
         <div class="flex items-center justify-between">
-          <a href="" class="w-[138px] h-[28px] block flex-shrink-0">
-            <img class="size-full" src="../../assets/images/nongthao.png" alt="">
+          <a href="/" class="w-[138px] h-[28px] block flex-shrink-0">
+            <img class="size-full" src="/src/assets/images/nongthao.png" alt="">
           </a>
           <div id="mobile-menu-close" class="w-9">
-            <img src="../../assets/icons/close.svg" alt="">
+            <img src="/src/assets/icons/close.svg" alt="">
           </div>
         </div>
         <div class="flex items-center justify-between mt-7 h-[42px] bg-[#EBF1E7] rounded-full p-[3px]">
           <input class="text-sm text-ct-text-color bg-transparent outline-none ml-4 placeholder:text-[#00000080]"
-                 type="text" placeholder="Bạn muốn tìm...">
+            type="text" placeholder="Bạn muốn tìm...">
           <div class="w-9">
-            <img class="img-cover" src="../../assets/icons/search.svg" alt="">
+            <img class="img-cover" src="/src/assets/icons/search.svg" alt="">
           </div>
         </div>
         <div class="mt-3">
           <div class="">
             <div id="mobile-menu-product"
-                 class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
-              <div class="font-semibold text-ct-primary uppercase">sản phẩm</div>
-              <img src="../../assets/icons/list-down.svg" alt="" class="">
+              class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
+              <a href="/src/pages/san-pham/" class="font-semibold text-ct-primary uppercase">sản phẩm</a>
+              <img src="/src/assets/icons/list-down.svg" alt="" class="">
             </div>
             <ul id="mobile-menu-product-item-box"
-                class="mb-3 hidden mt-1 *:border-b-[0.5px] *:border-[#0000004D] pl-[18px] *:text-black">
+              class="mb-3 hidden mt-1 *:border-b-[0.5px] *:border-[#0000004D] pl-[18px] *:text-black">
               <li>
-                <a class="link block size-full py-2" href="">Thảo dược</a>
+                <a class="link block size-full py-2" href="/src/pages/san-pham/thao-duoc/">Thảo dược</a>
               </li>
               <li>
                 <a class="link block size-full py-2" href="">Nông sản</a>
@@ -77,24 +77,24 @@
             </ul>
           </div>
           <div class="">
-            <a href="" class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
+            <a href="/src/pages/ve-nong-thao/" class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
               <div class="font-semibold text-ct-primary uppercase">Về nông thảo</div>
             </a>
           </div>
           <div class="">
             <div class="flex items-center justify-between py-2 border-b-[0.5px] border-[#0000004D]">
-              <div class="font-semibold text-ct-primary uppercase">Blog</div>
-              <img src="../../assets/icons/list-down.svg" alt="" class="">
+              <a href="/src/pages/tin-tuc/" class="font-semibold text-ct-primary uppercase">Blog</a>
+              <img src="/src/assets/icons/list-down.svg" alt="" class="">
             </div>
           </div>
           <div class="">
-            <a href="" class="flex items-center justify-between py-2">
+            <a href="/src/pages/lien-he/" class="flex items-center justify-between py-2">
               <div class="font-semibold text-ct-primary uppercase">Liên hệ</div>
             </a>
           </div>
         </div>
         <div
-                class="w-[252px] h-[51px] mt-12 mb-4 grid place-content-center bg-ct-cta-color font-bold text-lg text-white rounded">
+          class="w-[252px] h-[51px] mt-12 mb-4 grid place-content-center bg-ct-cta-color font-bold text-lg text-white rounded">
           0988.818.841</div>
         <a class="text-sm text-ct-primary block text-center">Gọi hỗ trợ ngay!</a>
       </div>
@@ -103,31 +103,31 @@
 
       <div class="flex items-center justify-end basis-0 xs:basis-[230px] gap-4 order-2">
         <div class="size-9 rounded-full hidden xs:grid place-content-center bg-[#EBF1E7]">
-          <img src="../../assets/icons/search2.svg" alt="search">
+          <img src="/src/assets/icons/search2.svg" alt="search">
         </div>
         <div class="relative group">
           <div id="cart-btn" class="size-7 xs:size-9 rounded-full bg-ct-primary grid place-content-center">
-            <img src="../../assets/icons/white-add-to-cart.svg" alt="add to cart">
+            <img src="/src/assets/icons/white-add-to-cart.svg" alt="add to cart">
           </div>
           <div
-                  class="text-[9px] pt-0.5 rounded-full size-4 xs:size-5 grid place-content-center bg-ct-cta-color absolute text-white -top-1 right-0">
+            class="text-[9px] pt-0.5 rounded-full size-4 xs:size-5 grid place-content-center bg-ct-cta-color absolute text-white -top-1 right-0">
             0
           </div>
           <div id="cart-box"
-               class="hidden group-hover:block w-[300px] bg-white border-[0.1px] border-gray-50 shadow absolute z-20 top-full right-0 xs:left-1/2 xs:-translate-x-1/2 p-[10px] before:absolute before:h-8 before:z-[19] before:-top-2 before:right-0 before:left-0">
-            <a href=""
-               class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
-              <img class="w-[31px] h-[27px]" src="../../assets/images/nongthao/cam.png" alt="">
+            class="hidden group-hover:block w-[300px] bg-white border-[0.1px] border-gray-50 shadow absolute z-20 top-full right-0 xs:left-1/2 xs:-translate-x-1/2 p-[10px] before:absolute before:h-8 before:z-[19] before:-top-2 before:right-0 before:left-0">
+            <a href="/src/pages/san-pham/thao-duoc/mut-chanh-tay-say-lanh-100g-huu-co.html"
+              class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
+              <img class="w-[31px] h-[27px]" src="/src/assets/images/nongthao/cam.png" alt="">
               <div class="line-clamp-1">Mứt chanh tây sấy lạnh 100% hữu cơ không đường ngon</div>
               <div class="text-ct-text-color text-nowrap">x 1</div>
             </a>
-            <a href=""
-               class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
-              <img class="w-[31px] h-[27px]" src="../../assets/images/nongthao/cam.png" alt="">
+            <a href="/src/pages/san-pham/thao-duoc/mut-chanh-tay-say-lanh-100g-huu-co.html"
+              class="flex items-center gap-3 text-xs text-black border-b-[0.3px] last:border-0 first:pt-0 border-[#A1A1A180] py-3">
+              <img class="w-[31px] h-[27px]" src="/src/assets/images/nongthao/cam.png" alt="">
               <div class="line-clamp-1">Mứt chanh tây sấy lạnh 100% hữu cơ không đường ngon</div>
               <div class="text-ct-text-color text-nowrap">x 1</div>
             </a>
-            <a href="" class="w-full block py-2.5 bg-ct-cta-color text-xs text-white text-center">
+            <a href="/src/pages/thong-tin-don-hang.html" class="w-full block py-2.5 bg-ct-cta-color text-xs text-white text-center">
               ĐẶT HÀNG NGAY
             </a>
           </div>
@@ -141,15 +141,15 @@
   </div>
   <section class="wrapper pb-12 px-4 pt-5 bg-[#FFFFFF]">
     <div class="flex items-center gap-x-2.5 mb-[25px]">
-      <div class="xs:text-sm text-xs text-ct-text-color">Trang chủ</div>
+      <a href="/" class="xs:text-sm text-xs text-ct-text-color">Trang chủ</a>
       <div class="">
         <img src="../../assets/icons/link-page-arrow.svg" alt="">
       </div>
-      <div class="xs:text-sm text-xs text-ct-text-color">Tin tức</div>
+      <a href="/src/pages/tin-tuc/" class="xs:text-sm text-xs text-ct-text-color">Tin tức</a>
       <div class="">
         <img src="../../assets/icons/link-page-arrow.svg" alt="">
       </div>
-      <div class="xs:text-sm text-xs text-[#C4C4C4]">Nông nghiệp sạch</div>
+      <a href="" class="xs:text-sm text-xs text-[#C4C4C4]">Nông nghiệp sạch</a>
     </div>
     <div class="flex justify-between gap-10 mb-50px">
       <div class="grid xs:grid-cols-2 grid-cols-1 gap-[27px]">
@@ -163,7 +163,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -186,7 +186,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -209,7 +209,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -232,7 +232,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -255,7 +255,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -278,7 +278,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -301,7 +301,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -324,7 +324,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -347,7 +347,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -370,7 +370,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -393,7 +393,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -416,7 +416,7 @@
               <hr>
               <div class="flex justify-between">
                 <div class="flex items-center w-1/2">
-                  <a href="#" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
+                  <a href="/src/pages/nong-thao-da-trong-va-thu-hoach-vuon-ca-chua-nhu-the-nao.html" class=" no-underline text-base  text-ct-text-color hover:text-ct-primary">XEM CHI TIẾT</a>
                   <div class="w-4 h-4 flex justify-center items-center">
                     <img src="../../assets/icons/see-all-arrow.svg" alt="">
                   </div>
@@ -450,7 +450,7 @@
             <div class="bg-[#E0E0E0] h-[1.04px] flex-1"></div>
           </div>
           <div class="flex flex-col gap-[15px]">
-            <a href="" class="text-center py-3 text-[16.67px] border-[1.04px] border-[#356C071A] hover:bg-[#356C071A] font-semibold text-ct-text-color">NÔNG NGHIỆP SẠCH</a>
+            <a href="" class="text-center py-3 text-[16.67px] border-[1.04px] border-[#356C071A] bg-[#356C071A] font-semibold text-ct-text-color">NÔNG NGHIỆP SẠCH</a>
             <a href="" class="text-center py-3 text-[16.67px] border-[1.04px] text-[#2D3E50] hover:bg-[#356C071A]">THẢO DƯỢC</a>
             <a href="" class="text-center py-3 text-[16.67px] border-[1.04px] text-[#2D3E50] hover:bg-[#356C071A]">MẸO VẶT</a>
             <a href="" class="text-center py-3 text-[16.67px] border-[1.04px] text-[#2D3E50] hover:bg-[#356C071A]">CON TỰ HỌC</a>
